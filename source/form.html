@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Кэт энерджи</title>
+  <title>HTML Academy: Кэт энерджи. Форма</title>
 </head>
 
 <body class="page__body">
@@ -11,8 +11,7 @@
   <header class="page-header">
     <div class="wrapper">
       <a class="page-header__logo" href="index.html">
-        <img class="logo" src="https://via.placeholder.com/192x66" alt="Логотип магазина Кэт-энерджи" width="192"
-          height="66">
+        <img class="logo" src="https://via.placeholder.com/192x66" alt="Логотип магазина Кэт-энерджи" width="192" height="66">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -42,29 +41,29 @@
         <ul class="form__list">
           <li class="form__item">
             <label class="form__label" for="name">Имя:*</label>
-            <input class="form__input-text" type="text" id="name" placeholder="Барсик" required>
+            <input class="form__input-text" type="text" id="name" name="name" placeholder="Барсик" required>
           </li>
           <li class="form__item">
             <label class="form__label" for="mass">Вес (Кг):*</label>
-            <input class="form__input-text" type="text" id="mass" placeholder="7" required>
+            <input class="form__input-text" type="text" id="mass" placeholder="7" name="mass" required>
           </li>
           <li class="form__item">
             <label class="form__label" for="age">Возраст (Лет): </label>
-            <input class="form__input-text" type="text" id="age" placeholder="7">
+            <input class="form__input-text" type="text" id="age" name="age" placeholder="7">
           </li>
         </ul>
         <div class="form__list-border-container">
           <ul class="form__list">
             <li class="form__item">
-              <input class="form__input-radio" type="checkbox" id="slimming">
+              <input class="form__input-radio" type="radio" name="mass" id="slimming">
               <label class="form__label" for="slimming">Похудение</label>
             </li>
             <li class="form__item">
-              <input class="form__input-radio" type="checkbox" id="up-mass">
+              <input class="form__input-radio" type="radio" name="mass" id="up-mass">
               <label class="form__label" for="up-mass">Набор массы</label>
             </li>
             <li class="form__item">
-              <input class="form__input-radio" type="checkbox" id="need-advice">
+              <input class="form__input-radio" type="radio" name="mass" id="need-advice">
               <label class="form__label" for="need-advice">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
@@ -75,21 +74,19 @@
         <ul class="form__list form__list--contacts">
           <li class="form__item">
             <label class="form__label form__label--email" for="email-input">E-mail:*</label>
-            <input class="form__input-text form__input-text--email" type="text" id="email-input"
-              placeholder="kuklachev@gmail.com" required>
+            <input class="form__input-text form__input-text--email" type="email" name="email" id="email-input" placeholder="kuklachev@gmail.com" required>
           </li>
           <li class="form__item">
             <label class="form__label form__label--tel" for="tel-input">Телефон:*</label>
-            <input class="form__input-text form__input-text--tel" type="text" id="tel-input"
-              placeholder="8 (960) 900-60-90" required>
+            <input class="form__input-text form__input-text--tel" type="tel" name="tel" id="tel-input" placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
       </fieldset>
       <fieldset class="form__fieldset form__fieldset--comments">
         <legend class="form__legend">Комментарий</legend>
-          <label class="visually-hidden" for="text-comments">Напишите ваш комментарий</label>
-          <textarea class="form__comments" id="text-comments"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
+        <label class="visually-hidden" for="text-comments">Напишите ваш комментарий</label>
+        <textarea class="form__comments" name="text-comments" id="text-comments"
+                  placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="form__fieldset">
         <legend class="form__legend">Дополнительно</legend>
@@ -113,7 +110,7 @@
         </ul>
       </fieldset>
       <div class="form__button-container wrapper">
-        <button type="submit" class="form__button">Отправить заявку</button>
+        <button type="submit" name="form-button" class="form__button">Отправить заявку</button>
         <p class="form__required-warning">* — Обязательные поля</p>
       </div>
     </form>
@@ -139,8 +136,7 @@
   <footer class="page-footer">
     <div class="page-footer__container wrapper">
       <a class="page-footer__logo page-footer__logo--link">
-        <img class="page-footer__logo-image" src="https://via.placeholder.com/130x25" width="130" height="25"
-          alt="footer logo">
+        <img class="page-footer__logo-image" src="https://via.placeholder.com/130x25" width="130" height="25" alt="footer logo">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -157,8 +153,7 @@
       </div>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__link-logo" href="https://htmlacademy.ru/intensive/adaptive"
-          aria-label="Переход на сайт HTML Academy">
+        <a class="copyright__link-logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML Academy">
           logo Html Academy
         </a>
       </div>
