@@ -42,29 +42,29 @@
         <ul class="form__list">
           <li class="form__item">
             <label class="form__label" for="name">Имя:*</label>
-            <input class="form__input-text" type="text" id="name" placeholder="Барсик" required>
+            <input class="form__input-text" type="text" id="name" name="name" placeholder="Барсик" required>
           </li>
           <li class="form__item">
             <label class="form__label" for="mass">Вес (Кг):*</label>
-            <input class="form__input-text" type="text" id="mass" placeholder="7" required>
+            <input class="form__input-text" type="text" id="mass" placeholder="7" name="mass" required>
           </li>
           <li class="form__item">
             <label class="form__label" for="age">Возраст (Лет): </label>
-            <input class="form__input-text" type="text" id="age" placeholder="7">
+            <input class="form__input-text" type="text" id="age" name="age" placeholder="7">
           </li>
         </ul>
         <div class="form__list-border-container">
           <ul class="form__list">
             <li class="form__item">
-              <input class="form__input-radio" type="checkbox" id="slimming">
+              <input class="form__input-radio" type="radio" name="mass" id="slimming">
               <label class="form__label" for="slimming">Похудение</label>
             </li>
             <li class="form__item">
-              <input class="form__input-radio" type="checkbox" id="up-mass">
+              <input class="form__input-radio" type="radio" name="mass" id="up-mass">
               <label class="form__label" for="up-mass">Набор массы</label>
             </li>
             <li class="form__item">
-              <input class="form__input-radio" type="checkbox" id="need-advice">
+              <input class="form__input-radio" type="radio" name="mass" id="need-advice">
               <label class="form__label" for="need-advice">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
@@ -75,12 +75,12 @@
         <ul class="form__list form__list--contacts">
           <li class="form__item">
             <label class="form__label form__label--email" for="email-input">E-mail:*</label>
-            <input class="form__input-text form__input-text--email" type="text" id="email-input"
+            <input class="form__input-text form__input-text--email" type="email" name="email" id="email-input"
               placeholder="kuklachev@gmail.com" required>
           </li>
           <li class="form__item">
             <label class="form__label form__label--tel" for="tel-input">Телефон:*</label>
-            <input class="form__input-text form__input-text--tel" type="text" id="tel-input"
+            <input class="form__input-text form__input-text--tel" type="tel" name="tel" id="tel-input"
               placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
@@ -88,7 +88,7 @@
       <fieldset class="form__fieldset form__fieldset--comments">
         <legend class="form__legend">Комментарий</legend>
           <label class="visually-hidden" for="text-comments">Напишите ваш комментарий</label>
-          <textarea class="form__comments" id="text-comments"
+          <textarea class="form__comments" name="text-comments" id="text-comments"
             placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
       <fieldset class="form__fieldset">
@@ -113,7 +113,7 @@
         </ul>
       </fieldset>
       <div class="form__button-container wrapper">
-        <button type="submit" class="form__button">Отправить заявку</button>
+        <button type="submit" name="form-button" class="form__button">Отправить заявку</button>
         <p class="form__required-warning">* — Обязательные поля</p>
       </div>
     </form>
