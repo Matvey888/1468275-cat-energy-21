@@ -1,0 +1,34 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  // border: none;
+  width: 18px;
+  height: 18px;
+}
+
+.main-nav__list {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $basic-black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__list-item-link {
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 22px 0;
+  border-top: 1px solid $special-border-gray;
+}
