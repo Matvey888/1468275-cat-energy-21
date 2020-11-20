@@ -1,0 +1,26 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.copyright__link {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: $special-dark-grey;
+  text-decoration: none;
+}
+
+
+.copyright__link-logo {
+  width: 27px;
+  height: 34px;
+  text-decoration: none;
+  background-image: url("../../img/logo-htmlacademy.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}

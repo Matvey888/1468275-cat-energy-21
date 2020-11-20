@@ -1,0 +1,40 @@
+.buttons-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  padding-bottom: 25px;
+}
+
+
+.buttons-list__button {
+  border: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  //
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.buttons-list__scale {
+  width: 84px;
+  height: 14px;
+  background-color: $basic-white;
+  border: 1px solid $special-grey;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.buttons-list__bar {
+  display: block;
+  width: 35px;
+  height: 6px;
+  margin: 3px;
+  background: $basic-green;
+  border-radius: 6px;
+}

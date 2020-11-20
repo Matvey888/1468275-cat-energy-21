@@ -1,0 +1,41 @@
+// .program {
+//   background-color: $basic-green-opacity;
+// }
+
+.program__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  // color: $basic-white;
+  padding: 27px 0;
+  margin: 0;
+}
+
+.program__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  // color: $basic-white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 28px;
+}
+
+.program__img {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.program__link {
+  margin: 3px 20px 22px;
+  padding: 7px 0;
+  font-size: 14px;
+  line-height: 18px;
+}
