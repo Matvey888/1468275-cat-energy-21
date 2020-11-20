@@ -3,33 +3,15 @@
 }
 
 .page-footer__logo {
+  margin: 0;
   display: flex;
   justify-content: center;
   padding-bottom: 25px;
+  padding-top: 25px;
   border-bottom: 1px solid $color-grey;
 }
 
 .page-footer__social {
   border-bottom: 1px solid $color-grey;
   margin-bottom: 20px;
-}
-
-.social__list {
-  list-style: none;
-  display: flex;
-}
-
-.page-footer__copyright {
-  display: flex;
-  justify-content: space-between;
-}
-
-.copyright__link {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  color: $special-dark-grey;
-  text-decoration: none;
 }
