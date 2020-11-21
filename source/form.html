@@ -31,7 +31,7 @@
 
   <main class="page-main">
     <h1 class="page-main__heading wrapper">Подбор программы</h1>
-    <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="POST">
+    <form class="page-main__form form wrapper" action="https://echo.htmlacademy.ru" method="POST">
       <p class="form__text wrapper">
         Заполните анкету, и мы подберем<br>
         программу питания для вашего кота
@@ -43,30 +43,30 @@
             <input class="form__input-text" type="text" id="name" name="name" placeholder="Барсик" required>
           </li>
           <li class="form__item">
-            <label class="form__label" for="mass">Вес (Кг):*</label>
+            <label class="form__label" for="mass">Вес(Кг):*</label>
             <input class="form__input-text" type="text" id="mass" placeholder="7" name="mass" required>
           </li>
           <li class="form__item">
-            <label class="form__label" for="age">Возраст (Лет): </label>
+            <label class="form__label" for="age">Возраст(Лет):</label>
             <input class="form__input-text" type="text" id="age" name="age" placeholder="7">
           </li>
         </ul>
-        <div class="form__list-border-container">
-          <ul class="form__list">
-            <li class="form__item">
-              <input class="form__input-radio" type="radio" name="mass" id="slimming">
-              <label class="form__label" for="slimming">Похудение</label>
-            </li>
-            <li class="form__item">
-              <input class="form__input-radio" type="radio" name="mass" id="up-mass">
-              <label class="form__label" for="up-mass">Набор массы</label>
-            </li>
-            <li class="form__item">
-              <input class="form__input-radio" type="radio" name="mass" id="need-advice">
-              <label class="form__label" for="need-advice">Не знаю (нужен ваш совет)</label>
-            </li>
-          </ul>
-        </div>
+      </div>
+      <div class="form__list-border-container">
+        <ul class="form__list">
+          <li class="form__item">
+            <input class="form__input-radio visually-hidden" type="radio" name="mass" id="slimming">
+            <label class="form__label-radio" for="slimming">Похудение</label>
+          </li>
+          <li class="form__item">
+            <input class="form__input-radio visually-hidden" type="radio" name="mass" id="up-mass">
+            <label class="form__label-radio" for="up-mass">Набор массы</label>
+          </li>
+          <li class="form__item">
+            <input class="form__input-radio visually-hidden" type="radio" name="mass" id="need-advice">
+            <label class="form__label-radio" for="need-advice">Не знаю (нужен ваш совет)</label>
+          </li>
+        </ul>
       </div>
       <fieldset class="form__fieldset form__fieldset--owner-contacts">
         <legend class="form__legend">Контактные данные (владельца кота)</legend>
