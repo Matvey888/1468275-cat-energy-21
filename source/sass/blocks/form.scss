@@ -16,6 +16,7 @@
 .form__list-border-container {
   padding: 22px 20px 20px;
   border-bottom: 1px solid $color-grey;
+  margin-bottom: 26px;
 }
 
 .form__list {
@@ -24,7 +25,8 @@
 }
 
 .form__item,
-.form__input-text::placeholder {
+.form__input-text::placeholder,
+.form__comments::placeholder {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -73,4 +75,99 @@
   height: 13.5px;
   background-color: $basic-green;
   border-radius: 50%;
+}
+
+.form__fieldset {
+  border: none;
+}
+
+.form__legend {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 26px;
+  flex-wrap: nowrap;
+}
+
+.form__legend::after {
+  content: "";
+  width: 158px;
+  height: 2px;
+  background-color: $basic-green;
+  margin-left: 22px;
+}
+
+.form__input-text--email {
+  background-image: url("../../img/icon_email.svg");
+  background-position: 190px 14px;
+  background-repeat: no-repeat;
+}
+
+.form__input-text--tel {
+  margin: 0;
+  background-image: url("../../img/phone-1.svg");
+  background-position: 190px 10px;
+  background-repeat: no-repeat;
+}
+
+.form__comments {
+  resize: none;
+  border: 1px solid $color-grey-universal;
+  width: 280px;
+  height: 150px;
+  padding: 13px 0 0 20px;
+}
+
+.form__label--checkbox {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-black;
+  padding-left: 44px;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.form__label--checkbox::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border: 1px solid $special-grey;
+  top: -5px;
+  left: 1px;
+}
+
+.form__input-checkbox:checked+.form__label--checkbox::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border: 1px solid $special-grey;
+  top: -5px;
+  left: 1px;
+  background-color: $basic-white;
+  background-image: url("../../img/tick.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.form__button {
+  border: none;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 21px;
+}
+
+.form__required-warning {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: $basic-black;
+  margin-bottom: 32px;
 }
