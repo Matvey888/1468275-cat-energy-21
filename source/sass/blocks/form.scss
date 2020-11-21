@@ -59,14 +59,14 @@
   content: "";
   position: absolute;
   top: -5px;
-  left: 0px;
+  left: 0;
   width: 29px;
   height: 29px;
   border: 1px solid $special-grey;
   border-radius: 50%;
 }
 
-.form__input-radio:checked+.form__label-radio::after {
+.form__input-radio:checked + .form__label-radio::after {
   content: "";
   position: absolute;
   top: 4px;
@@ -140,7 +140,7 @@
   left: 1px;
 }
 
-.form__input-checkbox:checked+.form__label--checkbox::after {
+.form__input-checkbox:checked + .form__label--checkbox::after {
   content: "";
   position: absolute;
   width: 26px;
