@@ -1,0 +1,12 @@
+.description-table__cell {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: $special-dark-grey;
+
+  &:last-child {
+    text-align: right;
+  }
+}

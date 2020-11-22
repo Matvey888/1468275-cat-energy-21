@@ -1,9 +1,19 @@
 @import "font-face.scss";
 @import "colors.scss";
-@import "blocks/page-body.scss";
+@import "blocks/button.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/page.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/page-main.scss";
+@import "blocks/catalog.scss";
+@import "blocks/products.scss";
+@import "blocks/product.scss";
+@import "blocks/additional-products.scss";
+@import "blocks/description-table.scss";
+@import "blocks/catalog-all.scss";
+@import "blocks/order-all.scss";
+@import "blocks/form.scss";
 @import "blocks/program.scss";
 @import "blocks/categories.scss";
 @import "blocks/categories-item.scss";
@@ -17,5 +27,3 @@
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 @import "blocks/wrapper.scss";
-@import "blocks/button.scss";
-@import "blocks/visually-hidden.scss";

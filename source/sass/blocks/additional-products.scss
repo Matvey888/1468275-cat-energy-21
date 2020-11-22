@@ -1,0 +1,32 @@
+.additional-products__heading {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: $basic-black;
+}
+
+.additional-products__list {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.additional-products__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $special-grey-black-dark;
+}
+
+.additional-products__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.additional-products__order {
+  height: 40px;
+}
