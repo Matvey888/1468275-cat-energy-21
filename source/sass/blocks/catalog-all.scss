@@ -1,0 +1,35 @@
+.catalog-all {
+  position: relative;
+  padding-bottom: 11px;
+}
+
+.catalog-all__show-text-more {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $special-black;
+  padding-top: 53px;
+}
+
+.catalog-all__show-text-small {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $special-dark-grey;
+}
+
+.catalog-all__show-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 0px;
+  color: $special-dark-grey;
+  background-color: $basic-grey;
+  height: 40px;
+}

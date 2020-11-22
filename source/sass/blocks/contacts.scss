@@ -1,6 +1,6 @@
 .contacts__header {
   display: flex;
-  justify-content: space-around;
+  padding: 0 20px;
 }
 
 .contacts__cooperation {
@@ -11,6 +11,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special-black;
+  width: 140px;
 }
 
 .contacts__adress {
@@ -20,4 +21,5 @@
   font-size: 14px;
   line-height: 20px;
   color: $special-dark-grey;
+  width: 140px;
 }

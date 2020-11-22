@@ -46,6 +46,19 @@
   margin: 0;
   margin-left: 14px;
   padding: 16px 0 10px 15px;
+
+  &--email {
+    background-image: url("../../img/icon_email.svg");
+    background-position: 190px 14px;
+    background-repeat: no-repeat;
+  }
+
+  &--tel {
+    margin: 0;
+    background-image: url("../../img/phone-1.svg");
+    background-position: 190px 10px;
+    background-repeat: no-repeat;
+  }
 }
 
 .form__label-radio {
@@ -99,19 +112,6 @@
   margin-left: 22px;
 }
 
-.form__input-text--email {
-  background-image: url("../../img/icon_email.svg");
-  background-position: 190px 14px;
-  background-repeat: no-repeat;
-}
-
-.form__input-text--tel {
-  margin: 0;
-  background-image: url("../../img/phone-1.svg");
-  background-position: 190px 10px;
-  background-repeat: no-repeat;
-}
-
 .form__comments {
   resize: none;
   border: 1px solid $color-grey-universal;
@@ -120,7 +120,7 @@
   padding: 13px 0 0 20px;
 }
 
-.form__label--checkbox {
+.form__label-checkbox {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -130,7 +130,7 @@
   margin-bottom: 12px;
 }
 
-.form__label--checkbox::before {
+.form__label-checkbox::before {
   content: "";
   position: absolute;
   width: 26px;
@@ -140,7 +140,7 @@
   left: 1px;
 }
 
-.form__input-checkbox:checked + .form__label--checkbox::after {
+.form__input-checkbox:checked + .form__label-checkbox::after {
   content: "";
   position: absolute;
   width: 26px;

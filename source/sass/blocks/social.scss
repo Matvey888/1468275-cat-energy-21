@@ -12,22 +12,22 @@
   text-decoration: none;
   display: flex;
   margin-left: 33px;
-}
 
-.social__link--vk {
-  background-image: url("../../img/icon_vkontakte.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
+  &--vk {
+    background-image: url("../../img/icon_vkontakte.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 
-.social__link--instagram {
+  &--instagram {
   background-image: url("../../img/icon_instagram.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
-}
+  }
 
-.social__link--fb {
-  background-image: url("../../img/icon_facebook.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  &--fb {
+    background-image: url("../../img/icon_facebook.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 }
