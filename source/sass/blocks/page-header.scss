@@ -2,6 +2,14 @@
   position: relative;
   background-color: transparent;
   border-bottom: 1px solid $color-grey;
+
+  @media (min-width: $tablet-width),
+  (min-width:$desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    padding: 0 30px;
+  }
 }
 
 .page-header__logo {

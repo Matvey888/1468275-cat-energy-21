@@ -1,5 +1,9 @@
 .live-example__container {
   background-color: $color-grey-special;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .live-example__title {
@@ -11,6 +15,11 @@
   color: $basic-black;
   padding-top: 27px;
   padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .live-example__text {
@@ -24,6 +33,21 @@
   padding: 0;
   padding-left: 20px;
   padding-right: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 702px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.live-example__price-container {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .live-example__list {
@@ -32,6 +56,10 @@
   padding: 0;
   display: flex;
   justify-content: space-around;
+
+  @media (min-width: $tablet-width) {
+    width: 370px;
+  }
 }
 
 .live-example__price {
@@ -43,4 +71,19 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+}
+
+.live-example__price-value {
+  margin: 0;
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 9px;
+  }
 }
