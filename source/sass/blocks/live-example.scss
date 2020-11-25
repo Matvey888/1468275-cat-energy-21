@@ -88,3 +88,9 @@
     padding-top: 9px;
   }
 }
+
+.live-example__column-container-bottom {
+  @media (min-width: $tablet-width) {
+    background-color: $color-grey-special;
+  }
+}

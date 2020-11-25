@@ -1,5 +1,10 @@
 .page-main {
   background-color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    // margin-bottom: 55px;
+    margin-top: 62px;
+  }
 }
 
 .page-main__heading {

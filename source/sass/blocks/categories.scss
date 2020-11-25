@@ -1,5 +1,15 @@
+// .categories {
+//   // margin: 0 auto;
+
+//   padding: 0 30px;
+// }
+
 .categories__list {
   margin: 20px auto;
   padding: 0 20px;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 }

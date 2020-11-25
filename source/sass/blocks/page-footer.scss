@@ -2,6 +2,18 @@
   display: flex;
 }
 
+.page-footer__container {
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 30px 61px;
+    height: 34px;
+  }
+}
+
 .page-footer__logo {
   margin: 0;
   display: flex;
@@ -9,9 +21,20 @@
   padding-bottom: 25px;
   padding-top: 25px;
   border-bottom: 1px solid $color-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    justify-content: space-between;
+    // align-items: center;
+  }
 }
 
 .page-footer__social {
   border-bottom: 1px solid $color-grey;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin: 0;
+  }
 }
