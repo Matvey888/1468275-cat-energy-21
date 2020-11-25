@@ -1,8 +1,6 @@
 .main-nav {
   display: flex;
   flex-direction: column;
-
-
 }
 
 .main-nav__toggle {
@@ -14,7 +12,7 @@
   height: 18px;
 
   @media (min-width: $tablet-width),
-  (min-width: $desktop-width) {
+    (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -31,7 +29,7 @@
   padding: 0;
 
   @media (min-width: $tablet-width),
-  (min-width: $desktop-width) {
+    (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     font-weight: normal;

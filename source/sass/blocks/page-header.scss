@@ -4,7 +4,7 @@
   border-bottom: 1px solid $color-grey;
 
   @media (min-width: $tablet-width),
-  (min-width:$desktop-width) {
+    (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     border: none;
