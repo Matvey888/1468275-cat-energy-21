@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 110px;
-    background-image: linear-gradient($basic-white 0%,$basic-white 30%,$basic-grey 30%,$basic-grey 100%);
+    background-image: linear-gradient($basic-white 0%, $basic-white 30%, $basic-grey 30%, $basic-grey 100%);
   }
 }
 
@@ -81,7 +81,7 @@
   justify-content: space-around;
 
   @media (min-width: $desktop-width) {
-    margin:62px 0 55px;
+    margin: 62px 0 55px;
   }
 }
 
