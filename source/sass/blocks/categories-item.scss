@@ -9,6 +9,12 @@
     padding: 37px 0 53px 0;
     margin-bottom: 30px;
 
+  @media (min-width: $desktop-width) {
+    padding: 45px 0 27px;
+    width: 570px;
+    margin: 0;
+  }
+
     &--slim::after,
     &--pro::after {
       content: "";
@@ -36,11 +42,6 @@
       right: 28px;
       background-image: url("../../img/cat-pro__tablet.svg");
     }
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 570px;
-    height: 374px;
   }
 }
 
@@ -80,8 +81,8 @@
     left: 20px;
 
     @media (min-width: $desktop-width) {
-      top: -10px;
-      left: 98px;
+      top: -5px;
+      left: 75px;
     }
   }
 
@@ -93,8 +94,8 @@
     left: 10px;
 
     @media (min-width: $desktop-width) {
-      top: -10px;
-      left: 85px;
+      top: -5px;
+      left: 68px;
     }
   }
 
@@ -132,7 +133,9 @@
 
   @media (min-width: $desktop-width) {
     width: 467px;
-    padding-left: 52px;
+    padding: 39px 0 5px 32px;
+    // padding-top: 43px;
+    // padding-left: 32px;
   }
 }
 
@@ -159,6 +162,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 52px;
+    padding: 0;
+    padding-bottom: 20px;
+    padding-left: 33px;
   }
 }
