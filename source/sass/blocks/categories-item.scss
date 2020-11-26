@@ -9,11 +9,11 @@
     padding: 37px 0 53px 0;
     margin-bottom: 30px;
 
-  @media (min-width: $desktop-width) {
-    padding: 45px 0 27px;
-    width: 570px;
-    margin: 0;
-  }
+    @media (min-width: $desktop-width) {
+      padding: 45px 0 27px;
+      width: 570px;
+      margin: 0;
+    }
 
     &--slim::after,
     &--pro::after {
