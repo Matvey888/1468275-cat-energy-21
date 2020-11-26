@@ -33,6 +33,11 @@
       background-image: url("../../img/cat-pro__tablet.svg");
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    height: 374px;
+  }
 }
 
 .categories-item__title {
@@ -43,7 +48,6 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $basic-black;
-  // text-align: right;
   padding: 30px 0 29px 91px;
   position: relative;
 
@@ -85,6 +89,10 @@
     text-align: left;
     padding: 0;
     padding-left: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
 

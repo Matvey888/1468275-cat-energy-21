@@ -12,7 +12,7 @@
   height: 18px;
 
   @media (min-width: $tablet-width),
-    (min-width: $desktop-width) {
+  (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -28,14 +28,19 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: $tablet-width),
-    (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
     width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    width: 478px;
   }
 }
 
@@ -61,10 +66,14 @@
       height: 2px;
       background-color: $basic-green;
     }
-  }
 
-  @media (min-width: $desktop-width) {
-    border: none;
-    color: $basic-white;
+    @media (min-width: $desktop-width) {
+      border: none;
+      color: $basic-white;
+
+      &--active::after {
+        background-color: $basic-white;
+      }
+    }
   }
 }

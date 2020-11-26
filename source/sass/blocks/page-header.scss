@@ -10,6 +10,10 @@
     border: none;
     padding: 0 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 53px 110px;
+  }
 }
 
 .page-header__logo {
@@ -18,4 +22,9 @@
   display: block;
   margin: 0;
   padding: 12px 20px 16px 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
 }
