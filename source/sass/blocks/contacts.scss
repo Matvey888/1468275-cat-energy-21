@@ -1,9 +1,26 @@
+.contacts {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
 .contacts__header {
   display: flex;
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    box-sizing: border-box;
+    width: 570px;
+    padding: 65px 75px;
+    top: 98px;
+    left: 110px;
+    background-color: $basic-white;
   }
 }
 

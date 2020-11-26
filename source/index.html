@@ -82,7 +82,7 @@
     </section>
     <section class="live-example">
       <div class="live-example__container wrapper">
-        <div class="live-example__column-container-top">
+        <div class="live-example__column-container-left">
           <h2 class="live-example__title">Живой пример</h2>
           <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
             Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
@@ -103,12 +103,18 @@
             </p>
           </div>
         </div>
-        <div class="live-example__column-container-bottom">
+        <div class="live-example__column-container-right">
           <div class="live-example__image-wrapper">
-            <img class="live-example__image live-example__image--show" src="https://via.placeholder.com/192x66"
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/before-desktop.png">
+              <img class="live-example__image live-example__image--show" src="https://via.placeholder.com/192x66"
               alt="Кот до применения программы питания">
-            <img class="live-example__image" src="https://via.placeholder.com/192x66"
+            </picture>
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/after-desktop.png">
+              <img class="live-example__image" src="https://via.placeholder.com/192x66"
               alt="Кот после применения программы питания">
+            </picture>
           </div>
           <ul class="live-example__buttons buttons-list">
             <li class="buttons-list__item">
@@ -126,9 +132,9 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts wrapper">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="contacts__header wrapper">
+      <div class="contacts__header">
         <p class="contacts__cooperation">
           Приглашаем<br>
           к сотрудничеству дилеров!

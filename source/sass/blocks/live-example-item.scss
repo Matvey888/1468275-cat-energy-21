@@ -1,3 +1,18 @@
+.live-example-item {
+  width: 124px;
+  text-align: center;
+  padding: 13px 0 18px;
+  position: relative;
+  border: 1px solid $special-grey;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+    width: 162px;
+  }
+}
+
 .live-example-item__value {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -6,6 +21,7 @@
   line-height: 24px;
   text-align: center;
   color: $basic-black;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -22,11 +38,25 @@
   line-height: 12px;
   text-align: center;
   color: $special-dark-grey;
-  width: 60px;
+  margin: 0 auto;
+  min-width: 80px;
+  position: absolute;
+  bottom: -15px;
+  transform: translateX(-50%);
+  left: 50%;
+  background-color: $color-grey-special;
+  padding: 0 9px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
     width: 127px;
+    white-space: nowrap;
+    bottom: -8px;
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
   }
 }
