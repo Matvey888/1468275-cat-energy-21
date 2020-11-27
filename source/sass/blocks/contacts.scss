@@ -1,6 +1,16 @@
 .contacts {
+  @media (min-width: $tablet-width) {
+    &--special {
+      background-color: $basic-grey;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     position: relative;
+
+    &--special {
+      background-color: $basic-grey;
+    }
   }
 }
 
@@ -11,10 +21,6 @@
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     padding: 0 30px;
-
-    &--special {
-      background-color: $basic-grey;
-    }
   }
 
   @media (min-width: $desktop-width) {
