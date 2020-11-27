@@ -20,6 +20,11 @@
   line-height: 36px;
   color: $basic-black;
   padding: 27px 20px 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .page-main__catalog-heading {
