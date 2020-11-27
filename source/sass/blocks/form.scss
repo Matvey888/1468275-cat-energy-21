@@ -72,17 +72,20 @@
 }
 
 .form__label {
+  margin: 0;
+  padding: 0;
   margin-right: 10px;
   white-space: nowrap;
 }
 
 .form__input-text {
-  width: 228px;
+  width: 75%;
   border: 1px solid $color-grey-universal;
   box-sizing: border-box;
   margin: 0;
   margin-left: 14px;
   padding: 16px 0 10px 15px;
+  box-sizing: border-box;
 
   &--email {
     background-image: url("../../img/icon_email.svg");
@@ -161,6 +164,7 @@
   font-size: 24px;
   line-height: 26px;
   flex-wrap: nowrap;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -192,6 +196,7 @@
   width: 280px;
   height: 150px;
   padding: 13px 0 0 20px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: 100%;
