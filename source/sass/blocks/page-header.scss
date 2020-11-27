@@ -2,12 +2,30 @@
   position: relative;
   background-color: transparent;
   border-bottom: 1px solid $color-grey;
+
+  @media (min-width: $tablet-width),
+    (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 10px 36px;
+  }
 }
 
 .page-header__logo {
-  width: 235px;
-  height: 66px;
+  width: 191px;
+  height: 38px;
   display: block;
   margin: 0;
-  padding: 0 20px;
+  padding: 12px 20px 16px 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+    padding: 0;
+  }
 }

@@ -4,6 +4,14 @@
   // justify-content: center;
   align-items: flex-end;
   margin: 20px auto;
+
+  @media (min-width: $tablet-width) {
+    // width: 130px;
+    // justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .social__link {
@@ -29,5 +37,9 @@
     background-image: url("../../img/icon_facebook.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 21px;
   }
 }

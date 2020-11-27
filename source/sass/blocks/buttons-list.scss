@@ -5,6 +5,11 @@
   align-items: center;
   padding: 0;
   padding-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    // margin: 0;
+    // padding: 0;
+  }
 }
 
 
@@ -16,9 +21,15 @@
   font-size: 16px;
   line-height: 20px;
   display: flex;
-  //
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    background-color: transparent;
+    border-bottom: 1px dotted $color-grey-b2;
+  }
 }
 
 .buttons-list__scale {
@@ -28,6 +39,14 @@
   border: 1px solid $special-grey;
   box-sizing: border-box;
   border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 428px;
+    height: 6px;
+    border: none;
+    background-color: $color-grey-dc;
+  }
 }
 
 .buttons-list__bar {
@@ -37,4 +56,17 @@
   margin: 3px;
   background: $basic-green;
   border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: $basic-green;
+    border: 13px solid $basic-white;
+    box-shadow: 0 1px 3px $color-black-shadow;
+    border-radius: 50%;
+    margin: 0;
+  }
 }

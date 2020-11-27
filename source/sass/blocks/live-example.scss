@@ -1,5 +1,20 @@
+// .live-example {
+
+// }
+
 .live-example__container {
   background-color: $color-grey-special;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    background-image: linear-gradient($basic-white 0%, $basic-white 30%, $basic-grey 30%, $basic-grey 100%);
+  }
 }
 
 .live-example__title {
@@ -11,6 +26,15 @@
   color: $basic-black;
   padding-top: 27px;
   padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 76px;
+  }
 }
 
 .live-example__text {
@@ -24,14 +48,41 @@
   padding: 0;
   padding-left: 20px;
   padding-right: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 702px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
+}
+
+.live-example__price-container {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+  }
 }
 
 .live-example__list {
   list-style: none;
-  margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-around;
+
+  @media (min-width: $desktop-width) {
+    margin: 62px 0 55px;
+  }
 }
 
 .live-example__price {
@@ -43,4 +94,59 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.live-example__price-value {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.live-example__column-container-left {
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
+}
+
+.live-example__column-container-rigt {
+  @media (min-width: $tablet-width) {
+    background-color: $color-grey-special;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $color-grey-special;
+    width: 690px;
+  }
+}
+
+.live-example__image-wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 517px;
+    overflow: hidden;
+    margin-bottom: 53px;
+  }
 }
