@@ -14,6 +14,10 @@
     background-size: 708px auto;
     background-image: url("../../img/gift-photo-tablet1.png");
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 245px;
+  }
 }
 
 .order-all__text {
