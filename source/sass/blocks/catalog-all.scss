@@ -1,6 +1,17 @@
 .catalog-all {
   position: relative;
   padding-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 429px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 auto;
+    border: 1px solid $special-grey;
+    box-sizing: border-box;
+  }
 }
 
 .catalog-all__show-text-more {
@@ -12,6 +23,11 @@
   text-transform: uppercase;
   color: $special-black;
   padding-top: 53px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  line-height: 22px;
+  }
 }
 
 .catalog-all__show-text-small {
@@ -32,4 +48,9 @@
   color: $special-dark-grey;
   background-color: $basic-grey;
   height: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+    margin: 0 auto;
+  }
 }

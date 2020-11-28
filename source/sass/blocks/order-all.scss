@@ -1,5 +1,19 @@
 .order-all {
   padding: 0 20px;
+  margin: 0 auto;
+  max-width: 280px;
+  height: 289px;
+  background-image: url("../../img/gift-photo-mobile1.png");
+  background-size: 280px auto;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+    height: 200px;
+    background-size: 708px auto;
+    background-image: url("../../img/gift-photo-tablet1.png");
+  }
 }
 
 .order-all__text {
@@ -9,5 +23,5 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  // color: $basic-white;
+  color: $basic-white;
 }

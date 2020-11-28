@@ -1,5 +1,21 @@
+.products {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 708px;
+    padding: 0 30px;
+  }
+}
+
 .products__item {
   margin-bottom: 8px;
   padding: 0 19px;
   border-bottom: 1px solid $special-grey-lighten;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin: 0;
+    // padding: 0;
+  }
 }
