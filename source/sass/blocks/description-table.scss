@@ -1,3 +1,9 @@
+.description-table__row {
+  @media (min-width: $tablet-width) {
+    // padding-bottom: 10px;
+  }
+}
+
 .description-table__cell {
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -13,6 +19,8 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
+    width: 252px;
     border-bottom: 1px solid $special-grey;
+    padding: 5px;
   }
 }

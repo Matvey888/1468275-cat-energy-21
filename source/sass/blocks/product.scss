@@ -43,8 +43,12 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
-    // text-align: center;
+    text-align: center;
+    width: 145px;
+    height: 47px;
+    margin: 11px auto;
     padding: 0;
+    // box-sizing: border-box;
   }
 }
 
@@ -85,7 +89,8 @@
   padding-bottom: 9px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
+    // margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -106,4 +111,9 @@
   text-decoration: none;
   color: $special-grey-black-dark;
   width: auto;
+
+  @media (min-width: $tablet-width) {
+    // width: 114px;
+    align-self: center;
+  }
 }
