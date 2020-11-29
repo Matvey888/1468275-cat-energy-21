@@ -68,15 +68,16 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    width: 252px;
-    height: 391px;
+    width: 168px;
+    height: 200px;
     top: 100px;
     left: 30%;
     box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
-    width: 180px;
+    width: 172px;
+    height: 196px;
   }
 }
 
