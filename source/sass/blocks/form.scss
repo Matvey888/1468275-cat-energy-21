@@ -166,6 +166,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    // padding-top: 30px;
+    padding-left: 88px;
   }
 }
 
@@ -178,6 +180,11 @@
   height: 29px;
   border: 1px solid $special-grey;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    left: 30px;
+  }
 }
 
 .form__input-radio:checked + .form__label-radio::after {
@@ -189,6 +196,11 @@
   height: 13.5px;
   background-color: $basic-green;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    top: 8px;
+    left: 39px;
+  }
 }
 
 .form__fieldset {

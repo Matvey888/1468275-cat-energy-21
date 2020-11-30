@@ -1,11 +1,34 @@
 .product {
   padding-bottom: 11px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    min-height: 430px;
+    background-color: $basic-grey;
+    box-sizing: border-box;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .product__container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    // justify-content: flex-start;
+    // flex-wrap: wrap;
+    margin: 0;
+  }
 }
 
 .product__title {
@@ -16,32 +39,90 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 145px;
+    height: 47px;
+    margin: 11px auto;
+    padding: 0;
+    // box-sizing: border-box;
+  }
 }
 
 .product__item-order {
   height: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+    align-self: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
 }
 
 .product__item-image-link {
   display: block;
   width: 140px;
   height: 112px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    width: 168px;
+    height: 200px;
+    top: 100px;
+    left: 30%;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 172px;
+    height: 196px;
+  }
 }
 
 .product__info {
   padding-bottom: 9px;
+
+  @media (min-width: $tablet-width) {
+    // margin: 0 auto;
+    padding: 0;
+  }
 }
 
 .product__description {
   border-collapse: collapse;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 252px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 180px;
+  }
 }
 
 .product__image {
-  display: flex;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    // position: absolute;
+  }
 }
 
 .product__item-link {
   text-decoration: none;
   color: $special-grey-black-dark;
+  width: auto;
+
+  @media (min-width: $tablet-width) {
+    // width: 114px;
+    align-self: center;
+  }
 }
