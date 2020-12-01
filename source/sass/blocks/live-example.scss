@@ -141,12 +141,24 @@
 }
 
 .live-example__image-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+
   @media (min-width: $desktop-width) {
-    display: flex;
-    padding: 0;
-    margin: 0;
     height: 517px;
     overflow: hidden;
     margin-bottom: 53px;
+  }
+}
+
+.live-example__image {
+  display: none;
+
+  &--show {
+    display: block;
+    width: 280px;
+    overflow: hidden;
   }
 }

@@ -11,6 +11,7 @@
   width: 65px;
   height: 65px;
   background: none;
+  cursor: pointer;
 
   &::before,
   &::after {
@@ -21,7 +22,7 @@
     width: 25px;
     height: 2px;
     background-color: $basic-black;
-    cursor: pointer;
+    // cursor: pointer;
   }
 
   &::before {

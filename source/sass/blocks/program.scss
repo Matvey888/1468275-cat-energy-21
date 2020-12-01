@@ -2,7 +2,7 @@
   background-image: url("../../img/cat_section_eating.png");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 66%;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -90,8 +90,9 @@
 }
 
 .program__link {
-  margin: 3px 20px 22px;
-  padding: 7px 0;
+  margin: 0 auto;
+  width: 87%;
+  height: 40px;
   font-size: 14px;
   line-height: 18px;
 

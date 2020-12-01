@@ -1,6 +1,4 @@
 .page-footer {
-  display: flex;
-
   &--special {
     @media (min-width: $tablet-width) {
       background-color: $basic-grey;
