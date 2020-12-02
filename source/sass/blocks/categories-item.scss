@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    width: 708px;
+    // width: 708px;
     padding: 37px 0 53px 0;
     margin-bottom: 30px;
 
@@ -107,8 +107,8 @@
     font-size: 36px;
     line-height: 36px;
     text-align: left;
-    padding: 0;
-    padding-left: 53px;
+    margin: 40px 0 20px;
+    padding: 0 0 0 53px;
   }
 
   @media (min-width: $desktop-width) {
@@ -132,7 +132,8 @@
     line-height: 24px;
     width: 377px;
     border-bottom: none;
-    padding-left: 29px;
+    margin-bottom: 30px;
+    padding-left: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -140,6 +141,12 @@
     padding: 39px 0 5px 32px;
     // padding-top: 43px;
     // padding-left: 32px;
+  }
+}
+
+.categories-item__br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
 
@@ -169,12 +176,17 @@
     background-image: url("../../img/icon-arrow.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      top: 8px;
+      left: 165px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-left: 32px;
+    padding: 0 0 12px 32px;
   }
 
   @media (min-width: $desktop-width) {

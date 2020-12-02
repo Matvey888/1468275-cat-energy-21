@@ -1,5 +1,13 @@
 .live-example {
-  margin: 0 0 28px;
+  margin: 0;
+  // padding: 0 0 28px;
+
+
+  @media (min-width: $tablet-width) {
+    margin: 14px 0 0;
+    padding: 0 0 67px;
+    background-image: linear-gradient($basic-white 0%, $basic-white 65%, $color-grey-special 65%, $color-grey-special 100%);
+  }
 }
 
 .live-example__container {
@@ -30,6 +38,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,13 +57,20 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    width: 702px;
+    width: 99%;
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 436px;
+  }
+}
+
+.live-example__br {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -101,6 +117,7 @@
     font-size: 20px;
     line-height: 20px;
     text-align: right;
+    align-self: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -153,6 +170,10 @@
   padding: 0;
   margin: 0;
 
+  @media (min-width: $tablet-width) {
+    height: 512px;
+  }
+
   @media (min-width: $desktop-width) {
     height: 517px;
     overflow: hidden;
@@ -160,13 +181,15 @@
   }
 }
 
-.live-example__image {
-  display: none;
+@media (max-width: $mobile-width-only) {
+  .live-example__image {
+    display: none;
 
-  &--show {
-    display: block;
-    width: 100%;
-    height: 232px;
-    overflow: hidden;
+    &--show {
+      display: block;
+      width: 100%;
+      height: 232px;
+      overflow: hidden;
+    }
   }
 }

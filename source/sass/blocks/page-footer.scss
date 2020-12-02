@@ -1,4 +1,10 @@
 .page-footer {
+  @media (min-width: $tablet-width) {
+    height: 150px;
+    margin: 0;
+    padding: 0;
+  }
+
   &--special {
     @media (min-width: $tablet-width) {
       background-color: $basic-grey;
@@ -7,13 +13,15 @@
 }
 
 .page-footer__container {
+  margin: 0 auto;
   padding: 0 20px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 55px 30px 61px;
+    padding: 71px 30px 61px;
     height: 34px;
   }
 

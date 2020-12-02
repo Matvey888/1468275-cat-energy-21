@@ -1,3 +1,7 @@
+.adventages {
+  border-bottom: 1px solid $special-border-gray;
+}
+
 .adventages__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -12,6 +16,7 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding: 15px 0 51px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,13 +31,15 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-rows: 250px 250px;
-    grid-template-columns: 280px 280px;
+    grid-template-rows: repeat(2, 280px);
+    grid-template-columns: repeat(2, 250px);
     column-gap: 133px;
-    row-gap: 0;
-    align-items: end;
-    padding-bottom: 47px;
-    border-bottom: 1px solid $special-border-gray;
+    row-gap: 35px;
+    align-items: center;
+    // padding-bottom: 47px;
+    margin: 0;
+    padding: 0;
+    // border-bottom: 1px solid $special-border-gray;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,16 +54,19 @@
 .adventages__item {
   margin: 0 0 22px;
 
-  &:nth-child(2) {
-    margin: 0 0 27px;
-  }
+  @media (max-width: $mobile-width-only) {
+    &:nth-child(2) {
+      margin: 0 0 27px;
+    }
 
-  &:nth-child(3) {
-    margin: 0 0 28px;
+    &:nth-child(3) {
+      margin: 0 0 28px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 0;
   }
 }
 
@@ -76,7 +86,7 @@
     position: absolute;
     width: 60px;
     height: 60px;
-    top: 0px;
+    top: 0;
     left: 0;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -84,7 +94,6 @@
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
-      top: -106px;
       left: 0;
     }
   }
@@ -94,6 +103,7 @@
     background-image: url("../../img/natural1.svg");
 
     @media (min-width: $tablet-width) {
+      top: -114px;
       background-image: url("../../img/natural2.svg");
     }
   }
@@ -102,6 +112,7 @@
     background-image: url("../../img/powder.svg");
 
     @media (min-width: $tablet-width) {
+      top: -114px;
       background-image: url("../../img/powder2.svg");
     }
   }
@@ -111,6 +122,7 @@
     background-image: url("../../img/eating.svg");
 
     @media (min-width: $tablet-width) {
+      top: -114px;
       background-image: url("../../img/eating2.svg");
     }
   }
@@ -120,6 +132,7 @@
     background-image: url("../../img/time1.svg");
 
     @media (min-width: $tablet-width) {
+      top: -114px;
       background-image: url("../../img/time2.svg");
     }
   }
@@ -130,5 +143,11 @@
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.adventages__text-br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
