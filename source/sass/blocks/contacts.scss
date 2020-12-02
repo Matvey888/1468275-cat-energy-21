@@ -1,4 +1,6 @@
 .contacts {
+  margin: 0 0 15px;
+
   @media (min-width: $tablet-width) {
     &--special {
       background-color: $basic-grey;
@@ -17,10 +19,8 @@
 .contacts__header {
   display: flex;
   justify-content: space-between;
-  // padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-
     // padding: 0 30px;
   }
 
@@ -44,11 +44,13 @@
   text-transform: uppercase;
   color: $special-black;
   width: 140px;
+  margin: 16px 0 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 21px;
     width: 171px;
+    margin: 0;
   }
 }
 

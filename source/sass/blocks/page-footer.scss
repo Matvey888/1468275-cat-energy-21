@@ -27,8 +27,7 @@
   margin: 0;
   display: flex;
   justify-content: center;
-  padding-bottom: 25px;
-  padding-top: 25px;
+  padding: 25px 0 29px;
   border-bottom: 1px solid $color-grey;
 
   @media (min-width: $tablet-width) {

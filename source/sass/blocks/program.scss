@@ -1,11 +1,12 @@
 .program {
+  height: 480px;
+  position: relative;
   background-image: url("../../img/cat_section_eating.png");
   background-position: 0 0;
   background-repeat: no-repeat;
-  background-size: 100% 66%;
+  background-size: 100% 64%;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     padding-left: 117px;
     height: 810px;
     background: none;
@@ -66,14 +67,15 @@
 }
 
 .program__img {
-  display: block;
-  margin: 0 auto;
-  padding: 0;
-  width: 280px;
+  position: absolute;
+  // margin: 0 auto;
+  // padding: 0;
+  left: 5px;
+  width: 294px;
   height: 270px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
     left: 30px;
     top: 210px;
     height: 610px;
@@ -81,7 +83,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
     top: -80px;
     left: 460px;
     width: 552px;
@@ -90,14 +91,16 @@
 }
 
 .program__link {
-  margin: 0 auto;
+  // margin: 0 auto;
+  position: absolute;
+  bottom: -2px;
+  left: 20px;
   width: 87%;
   height: 40px;
   font-size: 14px;
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
     top: 230px;
     left: 95px;
     font-size: 20px;

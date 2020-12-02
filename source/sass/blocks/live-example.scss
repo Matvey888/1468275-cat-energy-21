@@ -1,6 +1,6 @@
-// .live-example {
-
-// }
+.live-example {
+  margin: 0 0 28px;
+}
 
 .live-example__container {
   background-color: $color-grey-special;
@@ -24,8 +24,8 @@
   font-size: 36px;
   line-height: 40px;
   color: $basic-black;
+  margin: 0 0 34px;
   padding-top: 27px;
-  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -46,8 +46,6 @@
   color: $special-dark-grey;
   margin: 0;
   padding: 0;
-  padding-left: 20px;
-  padding-right: 21px;
 
   @media (min-width: $tablet-width) {
     width: 702px;
@@ -62,11 +60,11 @@
 
 .live-example__price-container {
   margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -76,9 +74,10 @@
 
 .live-example__list {
   list-style: none;
+  margin: 24px 0 33px;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 
   @media (min-width: $desktop-width) {
     margin: 62px 0 55px;
@@ -94,6 +93,8 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic-black;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     width: 174px;
@@ -124,12 +125,18 @@
 }
 
 .live-example__column-container-left {
+  margin: 0 0 45px;
+
   @media (min-width: $desktop-width) {
+    margin: 0;
     width: 436px;
   }
 }
 
 .live-example__column-container-rigt {
+  margin: 0;
+  padding: 0;
+
   @media (min-width: $tablet-width) {
     background-color: $color-grey-special;
   }
@@ -158,7 +165,8 @@
 
   &--show {
     display: block;
-    width: 280px;
+    width: 100%;
+    height: 232px;
     overflow: hidden;
   }
 }
