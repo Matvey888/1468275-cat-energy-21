@@ -70,8 +70,21 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    height: 280px;
     margin: 0;
     padding: 0;
+
+    // &:first-child {
+    //   background-image: url("../../img/adventage-1.svg");
+    //   background-position: 126px -10px;
+    //   background-repeat: no-repeat;
+    // }
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
   }
 }
 

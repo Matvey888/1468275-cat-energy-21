@@ -20,8 +20,8 @@
 
 .contacts__header {
   display: flex;
-  margin: 15px auto 10px;
-  padding: 0 20px;
+  margin: 15px auto 26px;
+  padding: 0;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -35,9 +35,9 @@
     position: absolute;
     box-sizing: border-box;
     width: 570px;
-    padding: 65px 75px;
+    padding: 61px 75px;
     top: 98px;
-    left: 110px;
+    left: 65px;
     background-color: $basic-white;
   }
 }
@@ -47,20 +47,23 @@
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   text-transform: uppercase;
   color: $special-black;
+  width: 140px;
+  margin: 0 0 0 19px;
+  padding: 12px 0 0 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 21px;
+    line-height: 24px;
     width: 171px;
     margin: 0;
-    padding: 66px 0 71px 41px;
+    padding: 66px 0 0 41px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 1px 0 0 3px;
+    padding: 3px 0 0 3px;
   }
 }
 
@@ -71,17 +74,21 @@
   font-size: 14px;
   line-height: 20px;
   color: $special-dark-grey;
-  margin-left: 13px;
+  width: 140px;
+  text-align: left;
+  margin: 0;
+  padding: 12px 0 0 3px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
     text-align: right;
     width: 160px;
-    padding: 62px 40px 0 58px;
+    padding: 65px 40px 0 58px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 169px;
     margin: 0;
     text-align: left;
     padding: 0;

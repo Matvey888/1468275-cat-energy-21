@@ -12,6 +12,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0;
+    background-image: linear-gradient($basic-white 0%, $basic-white 30%, $basic-grey 30%, $basic-grey 100%);
   }
 }
 
@@ -209,7 +210,7 @@
     &--after {
       position: absolute;
       top: -30px;
-      right: 15px;
+      right: -40px;
     }
   }
 }
