@@ -14,7 +14,7 @@
     margin-bottom: 30px;
 
     @media (min-width: $desktop-width) {
-      padding: 45px 0 27px;
+      padding: 40px 0 45px;
       width: 570px;
       margin: 0;
     }
@@ -138,14 +138,14 @@
 
   @media (min-width: $desktop-width) {
     width: 467px;
-    padding: 39px 0 5px 32px;
-    // padding-top: 43px;
-    // padding-left: 32px;
+    padding: 53px 0 5px 32px;
+    margin-bottom: 22px;
   }
 }
 
 .categories-item__br {
-  @media (max-width: $mobile-width-only) {
+  @media (max-width: $mobile-width-only),
+    (min-width: $desktop-width) {
     display: none;
   }
 }

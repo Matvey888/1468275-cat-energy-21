@@ -37,7 +37,7 @@
     width: 570px;
     padding: 65px 75px;
     top: 98px;
-    left: 10px;
+    left: 110px;
     background-color: $basic-white;
   }
 }
@@ -58,6 +58,10 @@
     margin: 0;
     padding: 66px 0 71px 41px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 1px 0 0 3px;
+  }
 }
 
 .contacts__adress {
@@ -75,5 +79,17 @@
     text-align: right;
     width: 160px;
     padding: 62px 40px 0 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    text-align: left;
+    padding: 0;
+  }
+}
+
+.contacts__br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
