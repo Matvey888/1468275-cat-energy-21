@@ -1,8 +1,14 @@
 .contacts {
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+  }
+}
+
+.contacts__wrapper {
   margin: 0 0 15px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 auto;
 
     &--special {
       background-color: $basic-grey;
@@ -10,7 +16,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: relative;
+    display: grid;
+    grid-template-columns: 110px auto auto;
+    grid-template-rows: 95px auto auto;
+    max-width: 1440px;
+    // background-image: url("../../img/location-desktop.png");
 
     &--special {
       background-color: $basic-grey;
@@ -32,13 +42,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
+    margin: 0;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
     box-sizing: border-box;
     width: 570px;
     padding: 61px 75px;
-    top: 98px;
-    left: 110px;
     background-color: $basic-white;
+    z-index: 3;
   }
 }
 
@@ -63,7 +74,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 3px 0 0 3px;
+    padding: 6px 0 0;
   }
 }
 
@@ -91,7 +102,7 @@
     width: 169px;
     margin: 0;
     text-align: left;
-    padding: 0;
+    padding: 4px 0 0;
   }
 }
 

@@ -60,6 +60,10 @@
       transform: rotate(-45deg);
     }
 
+    &--nojs {
+      display: none;
+    }
+
     @media (min-width: $tablet-width),
       (min-width: $desktop-width) {
       display: none;

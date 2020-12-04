@@ -18,7 +18,7 @@
         <img class="logo" src="img/logo-mobile1.svg" alt="Логотип магазина Кэт-энерджи">
       </picture>
     </a>
-    <nav class="main-nav main-nav--opened">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list main-menu">
         <li class="main-menu__item">
@@ -57,7 +57,8 @@
         </li>
         <li class="categories__list-item categories-item categories-item--pro">
           <h3 class="categories-item__title categories-item__title--pro">Набор массы</h3>
-          <p class="categories-item__text">Заработать авторитет среди дворовых котов<br class="categories-item__br"> и даже собак? Серия Cat Energy Pro
+          <p class="categories-item__text">Заработать авторитет среди дворовых котов<br class="categories-item__br"> и
+            даже собак? Серия Cat Energy Pro
             поможет вашему коту нарастить необходимые<br class="categories-item__br"> мышцы!</p>
           <a class="categories-item__link" href="#">Каталог pro</a>
         </li>
@@ -67,16 +68,20 @@
       <h2 class="adventages__title">Как это работает</h2>
       <ul class="adventages__list">
         <li class="adventages__item">
-          <p class="adventages__text adventages__text--img-natural">Функциональное питание содержит только полезные питательные вещества.</p>
+          <p class="adventages__text adventages__text--img-natural">Функциональное питание содержит только полезные
+            питательные вещества.</p>
         </li>
         <li class="adventages__item">
-          <p class="adventages__text adventages__text--img-powder">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          <p class="adventages__text adventages__text--img-powder">Выпускается в виде порошка, который нужно лишь залить
+            кипятком и готово.</p>
         </li>
         <li class="adventages__item">
-          <p class="adventages__text adventages__text--img-eating">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          <p class="adventages__text adventages__text--img-eating">Замените один-два приема обычной еды на наше
+            функциональное питание.</p>
         </li>
         <li class="adventages__item">
-          <p class="adventages__text adventages__text--img-time">Уже через месяц наслаждайтесь изменениями к лучшему<br class="adventages__text-br"> вашего питомца!</p>
+          <p class="adventages__text adventages__text--img-time">Уже через месяц наслаждайтесь изменениями к лучшему<br
+              class="adventages__text-br"> вашего питомца!</p>
         </li>
       </ul>
     </section>
@@ -84,7 +89,8 @@
       <div class="live-example__container wrapper">
         <div class="live-example__column-container-left">
           <h2 class="live-example__title">Живой пример</h2>
-          <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat<br class="live-example__br"> Energy
+          <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat<br
+              class="live-example__br"> Energy
             Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
             по 16 часов в день.</p>
           <div class="live-example__price-container">
@@ -107,15 +113,15 @@
           <div class="live-example__image-wrapper">
             <picture>
               <source media="(min-width: 1240px)" srcset="img/before-desktop.png">
-                <source media="(min-width: 768px)" srcset="img/before-tablet.png">
-              <img class="live-example__image live-example__image--before live-example__image--show" src="img/before-mobile.png"
-              alt="Кот до применения программы питания">
+              <source media="(min-width: 768px)" srcset="img/before-tablet.png">
+              <img class="live-example__image live-example__image--before live-example__image--show"
+                src="img/before-mobile.png" alt="Кот до применения программы питания">
             </picture>
             <picture>
               <source media="(min-width: 1240px)" srcset="img/after-desktop.png">
-                <source media="(min-width: 768px)" srcset="img/after-tablet.png">
+              <source media="(min-width: 768px)" srcset="img/after-tablet.png">
               <img class="live-example__image live-example__image--after" src="img/after-mobile.png"
-              alt="Кот после применения программы питания">
+                alt="Кот после применения программы питания">
             </picture>
           </div>
           <ul class="live-example__buttons buttons-list">
@@ -135,21 +141,24 @@
       </div>
     </section>
     <section class="contacts">
-      <h2 class="visually-hidden">Контактная информация</h2>
-      <div class="contacts__header">
-        <p class="contacts__cooperation">
-          Приглашаем<br>
-          к сотрудничеству дилеров!
-        </p>
-        <p class="contacts__adress">
-          ул. Большая
-          Конюшенная, д. 19/8<br><br class="contacts__br">
-          Санкт-Петербург
-        </p>
+      <div class="contacts__wrapper">
+        <h2 class="visually-hidden">Контактная информация</h2>
+        <div class="contacts__header">
+          <p class="contacts__cooperation">
+            Приглашаем<br>
+            к сотрудничеству дилеров!
+          </p>
+          <p class="contacts__adress">
+            ул. Большая
+            Конюшенная, д. 19/8<br><br class="contacts__br">
+            Санкт-Петербург
+          </p>
+        </div>
+        <div class="contacts-map">
+          <!-- Место для карты -->
+        </div>
       </div>
-      <div class="contacts-map">
-        <!-- Место для карты -->
-      </div>
+
     </section>
   </main>
   <footer class="page-footer page-footer--special">
@@ -177,6 +186,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
