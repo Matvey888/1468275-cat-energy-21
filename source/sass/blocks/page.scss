@@ -1,6 +1,6 @@
-// .page {
-//   min-width: 1440px;
-// }
+.page {
+  min-width: 1440px;
+}
 
 .page__body {
   font-family: "Oswald", "Arial", sans-serif;
@@ -12,6 +12,7 @@
   grid-template-rows: min-content 1fr min-content;
 
   @media (min-width: $desktop-width) {
+    max-width: 1440px;
     position: relative;
 
     &--bg::before {
