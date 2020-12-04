@@ -6,13 +6,13 @@
   @media (min-width: $tablet-width) {
     margin: 14px 0 0;
     padding: 0 0 67px;
-    background-image: linear-gradient($basic-white 0%, $basic-white 65%, $color-grey-special 65%, $color-grey-special 100%);
+    background-image: linear-gradient($basic-white 0%, $basic-white 56.5%, $color-grey-special 56.5%, $color-grey-special 100%);
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0;
-    background-image: linear-gradient($basic-white 0%, $basic-white 30%, $basic-grey 30%, $basic-grey 100%);
+    background-image: linear-gradient($basic-white 0%, $basic-white 25%, $basic-grey 25%, $basic-grey 100%);
   }
 }
 
