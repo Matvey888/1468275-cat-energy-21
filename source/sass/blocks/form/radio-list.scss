@@ -1,3 +1,7 @@
 .radio-list {
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 20px;
+  }
 }

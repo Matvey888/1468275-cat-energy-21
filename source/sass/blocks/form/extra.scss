@@ -1,16 +1,38 @@
 .extra {
   margin: 0 auto 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .extra__legend {
   margin: 0 auto 38px;
   padding-left: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-bottom: 62px;
+  }
+}
+
+.extra__legend::before {
+  @media (min-width: $tablet-width) {
+    width: 4%;
+    flex-shrink: 14;
+    margin-right: 39px;
+  }
 }
 
 .extra__legend::after {
   width: 50%;
   margin-top: 4px;
   margin-left: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 58%;
+    margin-left: 40px;
+  }
 }
 
 .extra__list {
@@ -18,9 +40,11 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
+    padding: 0 85px;
     display: grid;
     grid-template-columns: repeat(2, 221px);
     column-gap: 123px;
+    row-gap: 17px;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,6 +79,12 @@
   border: 1px solid $special-grey;
   top: -5px;
   left: 1px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -15px;
+  }
 }
 
 .extra__input-checkbox:checked + .extra__label-checkbox::after {
@@ -69,4 +99,11 @@
   background-image: url("../../img/tick.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -15px;
+    background-position: center center;
+  }
 }

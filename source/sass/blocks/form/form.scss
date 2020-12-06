@@ -1,5 +1,9 @@
 .form {
   margin: 0 auto 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .form__text {
@@ -15,13 +19,18 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    padding: 0 60px;
+    padding: 0 0 0 70px;
+    margin-bottom: 22px;
   }
 }
 
 .form__container {
   margin: 0 auto;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -38,7 +47,7 @@
     width: 82%;
     margin: 0 auto;
     border: 1px solid $special-grey;
-    padding: 0;
+    padding: 20px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -84,13 +93,13 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    padding: 20px 0 16px 25px;
   }
 }
 
 .form__fieldset {
   @media (min-width: $tablet-width) {
-    width: 631px;
+    // width: 631px;
     margin: 0 auto;
   }
 
@@ -107,7 +116,7 @@
   font-size: 24px;
   line-height: 26px;
   flex-wrap: nowrap;
-  position: relative;
+  // position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -145,7 +154,7 @@
     margin: 0 auto;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -164,8 +173,11 @@
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
     width: 282px;
     height: 52px;
+    margin-right: 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -182,4 +194,9 @@
   text-align: center;
   color: $basic-black;
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
