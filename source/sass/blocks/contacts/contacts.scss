@@ -34,6 +34,10 @@
   padding: 0;
   box-sizing: border-box;
 
+  &--form {
+    margin: 0 auto 19px;
+  }
+
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     margin: 0 auto;
