@@ -1,0 +1,28 @@
+.data-cat {
+  margin: 0;
+}
+
+.data-cat__item {
+  margin: 0 0 16px;
+
+  &:first-child {
+    padding: 3px 0 0;
+  }
+}
+
+.data-cat__input-text {
+  margin-left: auto;
+  margin-right: 0;
+
+  &--name {
+    width: 82%;
+  }
+
+  &--mass {
+    width: 73%;
+  }
+
+  &--age {
+    width: 61%;
+  }
+}

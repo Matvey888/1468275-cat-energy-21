@@ -1,0 +1,64 @@
+.owner-contacts {
+  margin: 0 auto 27px;
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.owner-contacts__legend {
+  padding-left: 19px;
+}
+
+.owner-contacts__legend::after {
+  margin: 0 0 18px;
+}
+
+.owner-contacts__list {
+  margin: 35px 0 0;
+  padding: 0 19px;
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.owner-contacts__item {
+  margin: 0 0 15px;
+}
+
+.owner-contacts__input {
+  &--email {
+    margin: 0 0 0 14px;
+    width: 77%;
+    background-image: url("../../img/icon_email.svg");
+    background-position: 180px 14px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-position: 514px 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 448px 12px;
+    }
+  }
+
+  &--tel {
+    width: 72%;
+    margin: 0 0 0 10px;
+    background-image: url("../../img/phone-1.svg");
+    background-position: 170px 13px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-position: 510px 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 435px 10px;
+    }
+  }
+}
