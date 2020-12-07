@@ -28,6 +28,12 @@
     line-height: 60px;
     padding: 0 0 57px 70px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1240px;
+    margin-top: 6px;
+    padding-left: 20px;
+  }
 }
 
 .page-main__catalog-heading {

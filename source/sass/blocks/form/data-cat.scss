@@ -25,6 +25,10 @@
       width: 90%;
       padding-left: 19px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 89%;
+    }
   }
 
   &--mass {
@@ -34,6 +38,10 @@
       width: 85%;
       padding-left: 20px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 83%;
+    }
   }
 
   &--age {
@@ -42,6 +50,10 @@
     @media (min-width: $tablet-width) {
       width: 78.5%;
       padding-left: 19px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 77%;
     }
   }
 }

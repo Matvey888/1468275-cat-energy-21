@@ -77,8 +77,8 @@
         </div>
       </div>
 
-      <div class="form__fieldset owner-contacts">
-        <h2 class="form__legend owner-contacts__legend">Контактные данные (владельца кота)</h2>
+      <fieldset class="form__fieldset owner-contacts">
+        <legend class="form__legend owner-contacts__legend">Контактные данные<br> (владельца кота)</legend>
         <ul class="form__list owner-contacts__list">
           <li class="form__item owner-contacts__item">
             <label class="form__label owner-contacts__label owner-contacts__label--email" for="email-input">E-mail:*</label>
@@ -91,18 +91,18 @@
               placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
-      </div>
+      </fieldset>
 
-      <div class="form__fieldset comments">
-        <h2 class="form__legend comments__legend">Комментарий</h2>
+      <fieldset class="form__fieldset comments">
+        <legend class="form__legend comments__legend">Комментарий</legend>
         <div class="comments__container">
           <label class="visually-hidden" for="text-comments">Напишите ваш комментарий</label>
         <textarea class="form__comments comments__textarea" name="text-comments" id="text-comments"
           placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
-      </div>
-      <div class="form__fieldset extra">
-        <h2 class="form__legend extra__legend">Дополнительно</h2>
+      </fieldset>
+      <fieldset class="form__fieldset extra">
+        <legend class="form__legend extra__legend">Дополнительно</legend>
         <ul class="form__list extra__list">
           <li class="form__item extra__item">
             <input class="extra__input-checkbox visually-hidden" type="checkbox" id="form-sweetener"
@@ -122,7 +122,7 @@
             <label class="form__label extra__label-checkbox" for="form-vitamins">Витамины</label>
           </li>
         </ul>
-      </div>
+      </fieldset>
       <div class="form__button-container">
         <button type="submit" name="form-button" class="form__button button">Отправить заявку</button>
         <p class="form__required-warning">* — Обязательные поля</p>

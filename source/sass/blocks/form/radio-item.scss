@@ -36,6 +36,11 @@
     width: 40px;
     height: 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: -7px;
+    left: 26px;
+  }
 }
 
 .radio-item__input:checked + .radio-item__label::after {
@@ -49,8 +54,8 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    top: 8px;
-    left: 39px;
+    top: 5px;
+    left: 38px;
     width: 18px;
     height: 18px;
   }
