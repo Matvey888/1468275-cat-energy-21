@@ -29,7 +29,7 @@
 .owner-contacts__br {
   display: none;
 
-  @media (max-width: $mobile-width-only){
+  @media (max-width: $mobile-width-only) {
     display: block;
   }
 }
