@@ -1,0 +1,126 @@
+.owner-contacts {
+  padding: 0;
+  margin: 0 auto 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 13px;
+  }
+}
+
+.owner-contacts__legend {
+  padding: 0 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    margin-left: 30px;
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // width: 1220px;
+    padding: 0 40px;
+    margin-left: 70px;
+    margin-bottom: 35px;
+  }
+}
+
+.owner-contacts__br {
+  display: none;
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
+}
+
+.owner-contacts__list {
+  margin: 35px 0 0;
+  padding: 0 19px;
+
+  @media (min-width: $tablet-width) {
+    margin: 37px 60px;
+    padding: 0 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 50px;
+    margin: 37px auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.owner-contacts__item {
+  margin: 0 0 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 575px;
+    padding: 0;
+  }
+}
+
+.owner-contacts__input {
+  &--email {
+    margin: 0 0 0 14px;
+    width: 77%;
+    background-image: url("../../img/icon_email.svg");
+    background-position: 180px 14px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 18px;
+      padding-left: 20px;
+      width: 85%;
+      background-position: 514px 18px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 450px 18px;
+    }
+  }
+
+  &--tel {
+    width: 72%;
+    margin: 0 0 0 10px;
+    background-image: url("../../img/phone-1.svg");
+    background-position: 170px 13px;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 15px;
+      padding-left: 20px;
+      width: 83%;
+      background-position: 498px 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-position: 435px 14px;
+    }
+  }
+}
+
+.owner-contacts__label {
+  &--email {
+    @media (min-width: $tablet-width) {
+      padding-left: 7px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+    }
+  }
+
+  &--tel {
+    @media (min-width: $tablet-width) {
+      padding-left: 4px;
+    }
+  }
+}

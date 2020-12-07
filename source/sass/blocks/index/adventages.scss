@@ -1,0 +1,215 @@
+.adventages {
+  border-bottom: 1px solid $special-border-gray;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
+}
+
+.adventages__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+  color: $basic-black;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 10px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 15px 0 51px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 57px;
+    // padding: 0 10px;
+  }
+}
+
+.adventages__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 45px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: repeat(2, 280px);
+    grid-template-columns: repeat(2, 250px);
+    column-gap: 133px;
+    row-gap: 35px;
+    align-items: center;
+    // padding-bottom: 47px;
+    margin: 0;
+    padding: 0;
+    // border-bottom: 1px solid $special-border-gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding: 0;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: 1fr;
+    column-gap: 75px;
+  }
+}
+
+.adventages__item {
+  position: relative;
+  margin: 0 0 22px;
+
+  @media (max-width: $mobile-width-only) {
+    &:nth-child(2) {
+      margin: 0 0 27px;
+    }
+
+    &:nth-child(3) {
+      margin: 0 0 28px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    height: 280px;
+    margin: 0;
+    padding: 0;
+
+    &:first-child::before {
+      position: absolute;
+      content: "";
+      width: 112px;
+      height: 280px;
+      top: -10px;
+      left: 125px;
+      background-image: url("../../img/adventage-1.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(2)::before {
+      position: absolute;
+      content: "";
+      width: 112px;
+      height: 280px;
+      top: -10px;
+      left: 123px;
+      background-image: url("../../img/adventage-2.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+
+    &:nth-child(3)::before {
+      position: absolute;
+      content: "";
+      width: 112px;
+      height: 280px;
+      top: -10px;
+      left: 123px;
+      background-image: url("../../img/adventage-3.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+
+    &:last-child::before {
+      position: absolute;
+      content: "";
+      width: 112px;
+      height: 280px;
+      top: -10px;
+      left: 125px;
+      background-image: url("../../img/adventage-4.svg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+  }
+}
+
+.adventages__text {
+  position: relative;
+  margin: 0;
+  padding: 0 0 0 80px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      left: 0;
+    }
+  }
+
+  &--img-natural::before {
+    top: -4px;
+    background-image: url("../../img/natural1.svg");
+
+    @media (min-width: $tablet-width) {
+      top: -114px;
+      background-image: url("../../img/natural2.svg");
+    }
+  }
+
+  &--img-powder::before {
+    background-image: url("../../img/powder.svg");
+
+    @media (min-width: $tablet-width) {
+      top: -114px;
+      background-image: url("../../img/powder2.svg");
+    }
+  }
+
+  &--img-eating::before {
+    top: -1px;
+    background-image: url("../../img/eating.svg");
+
+    @media (min-width: $tablet-width) {
+      top: -114px;
+      background-image: url("../../img/eating2.svg");
+    }
+  }
+
+  &--img-time::before {
+    top: -3px;
+    background-image: url("../../img/time1.svg");
+
+    @media (min-width: $tablet-width) {
+      top: -114px;
+      background-image: url("../../img/time2.svg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    // margin: 151px 0 57px;
+  }
+}
+
+.adventages__text-br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}

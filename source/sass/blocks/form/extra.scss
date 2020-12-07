@@ -1,0 +1,117 @@
+.extra {
+  margin: 0 auto 14px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.extra__legend {
+  margin-bottom: 38px;
+  padding: 0 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    margin-left: 30px;
+    margin-bottom: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 70px;
+    margin-bottom: 63px;
+  }
+}
+
+.extra__list {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 85px;
+    display: grid;
+    grid-template-columns: repeat(2, 221px);
+    column-gap: 123px;
+    row-gap: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    // margin: 0;
+    padding: 0 10px;
+    grid-template-columns: repeat(4, 221px);
+    column-gap: 104px;
+  }
+}
+
+.extra__item {
+  margin: 0 0 13px;
+}
+
+.extra__label-checkbox {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $basic-black;
+  padding-left: 44px;
+  position: relative;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 59px;
+  }
+}
+
+.extra__label-checkbox::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border: 1px solid $special-grey;
+  top: -5px;
+  left: 1px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 0;
+  }
+}
+
+.extra__input-checkbox:checked + .extra__label-checkbox::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border: 1px solid $special-grey;
+  top: -5px;
+  left: 1px;
+  background-color: $basic-white;
+  background-image: url("../../img/tick.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+    left: -15px;
+    background-position: center center;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 0;
+  }
+}

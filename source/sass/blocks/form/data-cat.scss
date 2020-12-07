@@ -1,0 +1,59 @@
+.data-cat {
+  margin: 0;
+}
+
+.data-cat__item {
+  margin: 0 0 16px;
+
+  &:first-child {
+    padding: 3px 0 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+  }
+}
+
+.data-cat__input-text {
+  margin-left: auto;
+  margin-right: 0;
+
+  &--name {
+    width: 82%;
+
+    @media (min-width: $tablet-width) {
+      width: 90%;
+      padding-left: 19px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 89%;
+    }
+  }
+
+  &--mass {
+    width: 73%;
+
+    @media (min-width: $tablet-width) {
+      width: 85%;
+      padding-left: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 83%;
+    }
+  }
+
+  &--age {
+    width: 61%;
+
+    @media (min-width: $tablet-width) {
+      width: 78.5%;
+      padding-left: 19px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 77%;
+    }
+  }
+}

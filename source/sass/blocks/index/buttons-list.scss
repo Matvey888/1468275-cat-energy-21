@@ -1,14 +1,19 @@
 .buttons-list {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 0;
-  padding-bottom: 25px;
+  margin: 29px 0 0;
+  padding: 0 31px 34px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 65px;
+  }
 
   @media (min-width: $desktop-width) {
-    // margin: 0;
-    // padding: 0;
+    width: 580px;
+    margin: 0;
+    padding: 0 0 67px;
   }
 }
 
@@ -60,7 +65,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: -13px;
-    left: 50%;
+    left: 46.5%;
     width: 8px;
     height: 8px;
     background-color: $basic-green;

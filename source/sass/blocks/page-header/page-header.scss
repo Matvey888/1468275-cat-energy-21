@@ -3,16 +3,19 @@
   background-color: transparent;
   border-bottom: 1px solid $color-grey;
 
-  @media (min-width: $tablet-width),
-    (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
+    margin: 20px auto 52px;
+    padding: 0 30px;
+    width: 92%;
     display: flex;
     justify-content: space-between;
     border: none;
-    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 50px 10px 36px;
+    width: 1220px;
+    margin: 47px auto 60px;
+    padding: 0 10px;
   }
 }
 
@@ -23,9 +26,13 @@
   margin: 0;
   padding: 12px 20px 16px 20px;
 
+  @media (min-width: $tablet-width) {
+    padding: 5px 0 0 0;
+  }
+
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
-    padding: 0;
+    padding: 5px 0 0;
   }
 }
