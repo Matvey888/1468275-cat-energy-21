@@ -1,27 +1,29 @@
 .extra {
-  margin: 0 auto 27px;
+  margin: 0 auto 14px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 24px;
+    margin-bottom: 33px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 31px;
+    margin-bottom: 40px;
   }
 }
 
 .extra__legend {
   margin-bottom: 38px;
-  padding-left: 19px;
+  padding: 0 19px;
 
   @media (min-width: $tablet-width) {
     padding: 0 40px;
-    margin-left: 18px;
-    margin-bottom: 56px;
+    margin-left: 30px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 55px;
+    margin-left: 70px;
+    margin-bottom: 63px;
   }
 }
 
@@ -30,7 +32,7 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 75px;
+    padding: 0 85px;
     display: grid;
     grid-template-columns: repeat(2, 221px);
     column-gap: 123px;

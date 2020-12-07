@@ -113,11 +113,10 @@
 
 .form__fieldset {
   border: none;
-
+  border-top: 2px solid $basic-green;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-    border-top: 2px solid $basic-green;
   }
 }
 
