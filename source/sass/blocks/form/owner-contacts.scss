@@ -1,6 +1,6 @@
 .owner-contacts {
   padding: 0;
-  margin: 0 auto 12px;
+  margin: 0 auto 14px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 45px;
@@ -12,7 +12,13 @@
 }
 
 .owner-contacts__legend {
-  padding: 0 19px;
+  padding: 0;
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      top: 14px;
+    }
+  }
 
 
   @media (min-width: $tablet-width) {
