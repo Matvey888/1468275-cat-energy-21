@@ -34,9 +34,9 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-main page-main--form">
     <h1 class="page-main__heading">Подбор программы</h1>
-    <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="POST">
+    <form class="page-main__form form wrapper" action="https://echo.htmlacademy.ru" method="POST">
       <p class="form__text">
         Заполните анкету, и мы подберем<br>
         программу питания для вашего кота
@@ -46,11 +46,13 @@
           <ul class="form__list data-cat">
             <li class="form__item data-cat__item">
               <label class="form__label data-cat__label" for="name">Имя:*</label>
-              <input class="form__input-text data-cat__input-text data-cat__input-text--name" type="text" id="name" name="name" placeholder="Барсик" required>
+              <input class="form__input-text data-cat__input-text data-cat__input-text--name" type="text" id="name"
+                name="name" placeholder="Барсик" required>
             </li>
             <li class="form__item data-cat__item">
               <label class="form__label data-cat__label data-cat__label--mass" for="mass">Вес (Кг):*</label>
-              <input class="form__input-text data-cat__input-text data-cat__input-text--mass" type="text" id="mass" placeholder="7" name="mass" required>
+              <input class="form__input-text data-cat__input-text data-cat__input-text--mass" type="text" id="mass"
+                placeholder="7" name="mass" required>
             </li>
             <li class="form__item data-cat__item">
               <label class="form__label data-cat__label data-cat__label--age" for="age">Возраст (Лет):</label>
@@ -62,7 +64,8 @@
         <div class="form__list-border-container">
           <ul class="form__list radio-list">
             <li class="form__item radio-list__item radio-item">
-              <input class="form__input-radio radio-item__input visually-hidden" type="radio" name="mass" id="slimming" checked>
+              <input class="form__input-radio radio-item__input visually-hidden" type="radio" name="mass" id="slimming"
+                checked>
               <label class="form__label-radio radio-item__label" for="slimming">Похудение</label>
             </li>
             <li class="form__item radio-list__item radio-item">
@@ -70,7 +73,8 @@
               <label class="form__label-radio radio-item__label" for="up-mass">Набор массы</label>
             </li>
             <li class="form__item radio-list__item radio-item">
-              <input class="form__input-radio radio-item__input visually-hidden" type="radio" name="mass" id="need-advice">
+              <input class="form__input-radio radio-item__input visually-hidden" type="radio" name="mass"
+                id="need-advice">
               <label class="form__label-radio radio-item__label" for="need-advice">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
@@ -78,17 +82,20 @@
       </div>
 
       <fieldset class="form__fieldset owner-contacts">
-        <legend class="form__legend owner-contacts__legend">Контактные данные<br class="owner-contacts__br"> (владельца кота)</legend>
+        <legend class="form__legend owner-contacts__legend">Контактные данные<br
+              class="owner-contacts__br"> (владельца кота)</legend>
         <ul class="form__list owner-contacts__list">
           <li class="form__item owner-contacts__item">
-            <label class="form__label owner-contacts__label owner-contacts__label--email" for="email-input">E-mail:*</label>
-            <input class="form__input-text owner-contacts__input owner-contacts__input--email" type="email" name="email" id="email-input"
-              placeholder="kuklachev@gmail.com" required>
+            <label class="form__label owner-contacts__label owner-contacts__label--email"
+              for="email-input">E-mail:*</label>
+            <input class="form__input-text owner-contacts__input owner-contacts__input--email" type="email" name="email"
+              id="email-input" placeholder="kuklachev@gmail.com" required>
           </li>
           <li class="form__item owner-contacts__item">
-            <label class="form__label owner-contacts__label owner-contacts__label--tel" for="tel-input">Телефон:*</label>
-            <input class="form__input-text owner-contacts__input owner-contacts__input--tel" type="tel" name="tel" id="tel-input"
-              placeholder="8 (960) 900-60-90" required>
+            <label class="form__label owner-contacts__label owner-contacts__label--tel"
+              for="tel-input">Телефон:*</label>
+            <input class="form__input-text owner-contacts__input owner-contacts__input--tel" type="tel" name="tel"
+              id="tel-input" placeholder="8 (960) 900-60-90" required>
           </li>
         </ul>
       </fieldset>
@@ -97,8 +104,8 @@
         <legend class="form__legend comments__legend">Комментарий</legend>
         <div class="comments__container">
           <label class="visually-hidden" for="text-comments">Напишите ваш комментарий</label>
-        <textarea class="form__comments comments__textarea" name="text-comments" id="text-comments"
-          placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="form__comments comments__textarea" name="text-comments" id="text-comments"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
       <fieldset class="form__fieldset extra">
@@ -118,7 +125,8 @@
             <label class="form__label extra__label-checkbox" for="form-milk">Молоко</label>
           </li>
           <li class="form__item extra__item">
-            <input class="extra__input-checkbox visually-hidden" type="checkbox" id="form-vitamins" name="form-vitamins">
+            <input class="extra__input-checkbox visually-hidden" type="checkbox" id="form-vitamins"
+              name="form-vitamins">
             <label class="form__label extra__label-checkbox" for="form-vitamins">Витамины</label>
           </li>
         </ul>
@@ -142,10 +150,11 @@
             Санкт-Петербург
           </p>
         </div>
-        <div class="contacts-map">
-          <!-- Место для карты -->
-        </div>
       </div>
+      <div class="contacts-map">
+        <!-- Место для карты -->
+      </div>
+
     </section>
   </main>
 

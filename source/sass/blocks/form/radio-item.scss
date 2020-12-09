@@ -31,7 +31,7 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    left: 30px;
+    left: 27px;
     width: 40px;
     height: 40px;
   }
@@ -53,9 +53,14 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    top: 5px;
-    left: 38px;
+    top: 8px;
+    left: 39px;
     width: 18px;
     height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 6px;
+    left: 38px;
   }
 }

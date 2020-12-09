@@ -6,10 +6,18 @@
     // margin-top: 62px;
     margin: 0;
     padding: 0;
+
+    &--form {
+      overflow-x: hidden;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+
+    &--form {
+      overflow-x: hidden;
+    }
   }
 }
 
