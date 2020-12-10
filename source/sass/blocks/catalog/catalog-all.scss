@@ -1,6 +1,5 @@
 .catalog-all {
   position: relative;
-  padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -26,12 +25,28 @@
   text-align: center;
   text-transform: uppercase;
   color: $special-black;
-  padding-top: 53px;
+  margin: 0 0 7px;
+  padding-top: 63px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 22px;
   }
+}
+
+.catalog-all__show-text-more::before,
+.catalog-all__show-text-more::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  top: 23px;
+  left: 45%;
+  background-color: $color-grey-d3;
+}
+
+.catalog-all__show-text-more::before {
+  transform: rotate(90deg);
 }
 
 .catalog-all__show-text-small {
@@ -42,6 +57,7 @@
   line-height: 16px;
   text-align: center;
   color: $special-dark-grey;
+  margin: 0 0 21px;
 }
 
 .catalog-all__show-link {

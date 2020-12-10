@@ -1,4 +1,6 @@
 .products {
+  margin-top: 18px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -13,13 +15,22 @@
 }
 
 .products__item {
-  margin-bottom: 8px;
-  padding: 0 19px;
-  border-bottom: 1px solid $special-grey-lighten;
+  position: relative;
+  margin-bottom: 41px;
 
   @media (min-width: $tablet-width) {
     border: none;
     margin: 0;
     // padding: 0;
   }
+}
+
+.products__item::after {
+  content: "";
+  position: absolute;
+  width: 114%;
+  height: 1px;
+  left: -7%;
+  bottom: -25px;
+  background-color: $special-grey-lighten;
 }

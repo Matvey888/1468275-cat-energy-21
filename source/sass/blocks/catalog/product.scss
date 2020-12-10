@@ -1,5 +1,5 @@
 .product {
-  padding-bottom: 11px;
+  // padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
@@ -20,8 +20,7 @@
 
 .product__container {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 13px;
+  margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -33,7 +32,7 @@
 
 .product__title {
   margin: 0;
-  padding: 0 71px 18px 0;
+  padding: 4px 0 14px 0;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -86,6 +85,7 @@
 }
 
 .product__info {
+  min-width: 140px;
   padding-bottom: 9px;
 
   @media (min-width: $tablet-width) {

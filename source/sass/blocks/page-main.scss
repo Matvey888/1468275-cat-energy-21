@@ -1,7 +1,8 @@
 .page-main {
   background-color: $basic-white;
 
-  &--form {
+  &--form,
+  &--catalog {
     margin-bottom: 15px;
     overflow-x: hidden;
   }
@@ -42,6 +43,7 @@
 }
 
 .page-main__catalog-heading {
+  margin-top: 3px;
   border-bottom: 1px solid $special-grey-lighten;
 
   @media (min-width: $tablet-width) {
