@@ -12,6 +12,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 19px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .data-cat__input-text {
