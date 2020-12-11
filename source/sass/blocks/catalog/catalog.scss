@@ -2,6 +2,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 68px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
+  }
 }
 
 .catalog__list {

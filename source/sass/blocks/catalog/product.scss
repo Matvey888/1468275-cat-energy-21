@@ -14,6 +14,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    margin-bottom: 4px;
   }
 }
 
@@ -80,6 +81,7 @@
   @media (min-width: $desktop-width) {
     width: 172px;
     height: 196px;
+    margin: 2px auto 33px;
   }
 }
 
@@ -90,6 +92,10 @@
   @media (min-width: $tablet-width) {
     // margin: 0 auto;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 4px;
   }
 }
 
@@ -121,7 +127,6 @@
   width: auto;
 
   @media (min-width: $tablet-width) {
-    // width: 114px;
     align-self: center;
   }
 }
