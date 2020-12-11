@@ -3,11 +3,11 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 49px;
+    margin-bottom: 62px;
   }
 }
 
@@ -15,15 +15,24 @@
   padding: 0;
   margin-bottom: 38px;
 
+  &::after {
+    top: 42%;
+    right: calc(-60vw + 140px);
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0 40px;
     // margin-left: 28px;
-    margin-bottom: 55px;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
     // margin-left: 70px;
+
+    &::after {
+      right: calc(-30vw + 40px);
+    }
   }
 }
 
@@ -55,5 +64,9 @@
     width: 94%;
     height: 174px;
     padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
   }
 }

@@ -41,6 +41,7 @@
 
 .form__container {
   margin: 0 auto;
+  margin-bottom: 20px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -57,7 +58,6 @@
 .form__list-border-container {
   position: relative;
   padding: 22px 0 16px;
-  // border-bottom: 1px solid $color-grey;
   margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
@@ -129,7 +129,7 @@
 .form__input-text {
   border: 1px solid $color-grey-universal;
   margin: 0;
-  padding: 16px 0 10px 15px;
+  padding: 16px 0 10px 13px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -141,7 +141,7 @@
 }
 
 .form__fieldset {
-  border: none;
+  margin: 0;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -196,8 +196,7 @@
 .form__legend::after {
   @media (max-width: $mobile-width-only) {
     width: 60vw;
-    top: 10px;
-    right: calc(-60vw - 20px);
+    right: calc(-60vw + 80px);
   }
 
   @media (min-width: $tablet-width) {

@@ -1,13 +1,13 @@
 .owner-contacts {
   padding: 0;
-  margin: 0 auto 14px;
+  margin: 0 auto 25px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 50px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 13px;
+    margin-bottom: 50px;
   }
 }
 
@@ -16,7 +16,7 @@
 
   @media (max-width: $mobile-width-only) {
     &::after {
-      top: 14px;
+      top: 12px;
     }
   }
 
@@ -24,14 +24,23 @@
   @media (min-width: $tablet-width) {
     padding: 0 40px;
     // margin-left: 30px;
-    margin-bottom: 36px;
+    margin-bottom: 76px;
+
+    &::after {
+      top: 17px;
+      right: calc(-100vw + 115px);
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
     margin: 0;
     // margin-left: 70px;
-    margin-bottom: 35px;
+    margin-bottom: 75px;
+
+    &::after {
+      right: calc(-100vw + 668px);
+    }
   }
 }
 
@@ -77,7 +86,7 @@
 
 .owner-contacts__input {
   &--email {
-    margin: 0 0 0 14px;
+    margin: 0 0 0 13px;
     width: 77%;
     background-image: url("../../img/icon_email.svg");
     background-position: 180px 14px;
