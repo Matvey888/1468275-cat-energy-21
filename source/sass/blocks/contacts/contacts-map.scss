@@ -3,7 +3,7 @@
   height: 362px;
   background-color: $basic-white;
   background-image: url("../../img/location-mobile.png");
-  background-position: 0 0;
+  background-position: center 0;
   background-repeat: no-repeat;
   box-sizing: border-box;
 
@@ -13,10 +13,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 1 / 4;
-    grid-row: 1 / 3;
     background-image: url("../../img/location-desktop.png");
     width: 100%;
-    // height: 400px;
+    height: 400px;
   }
 }

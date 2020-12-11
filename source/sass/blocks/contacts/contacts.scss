@@ -1,6 +1,10 @@
 .contacts {
-  @media (min-width: $desktop-width) {
+  &--special {
     background-color: $basic-grey;
+
+    @media (max-width: $mobile-width-only) {
+      padding-top: 23px;
+    }
   }
 }
 
@@ -9,22 +13,13 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
-
-    &--special {
-      background-color: $basic-grey;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 110px auto auto;
-    grid-template-rows: 95px auto auto;
-    // max-width: 1440px;
-    // background-image: url("../../img/location-desktop.png");
-
-    &--special {
-      background-color: $basic-grey;
-    }
+    position: relative;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 1240px;
   }
 }
 
@@ -46,14 +41,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    box-sizing: border-box;
-    width: 570px;
     padding: 61px 75px;
+    position: absolute;
+    top: 95px;
+    left: 20px;
+    width: 570px;
+
     background-color: $basic-white;
-    z-index: 4;
   }
 }
 

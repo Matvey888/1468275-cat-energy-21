@@ -1,12 +1,13 @@
 .list-container {
   margin: 0 auto;
-  padding: 39px 20px 8px;
-  border-bottom: 1px solid $color-grey;
+  padding: 39px 0 8px;
+  // border-bottom: 1px solid $color-grey;
 
   @media (min-width: $tablet-width) {
     border: none;
     width: 630px;
-    margin: 0 auto 44px;
+    padding: 39px 0 8px;
+    margin: 0 40px 54px;
   }
 
   @media (min-width: $desktop-width) {

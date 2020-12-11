@@ -1,6 +1,11 @@
 .page-main {
   background-color: $basic-white;
 
+  &--form {
+    margin-bottom: 15px;
+    overflow-x: hidden;
+  }
+
   @media (min-width: $tablet-width) {
     // margin-bottom: 55px;
     // margin-top: 62px;
@@ -8,9 +13,9 @@
     padding: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 0;
-  }
+  // @media (min-width: $desktop-width) {
+  //   padding: 0;
+  // }
 }
 
 .page-main__heading {

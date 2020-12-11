@@ -5,7 +5,7 @@
 .page__body {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
-  // background-color: $basic-white;
+  background-color: transparent;
   margin: 0;
   padding: 0;
   display: grid;
@@ -13,6 +13,7 @@
 
   @media (min-width: $desktop-width) {
     position: relative;
+    // overflow-x: hidden;
 
     &--bg::before {
       content: "";
@@ -21,7 +22,6 @@
       height: 694px;
       top: 0;
       right: 0;
-      // z-index: -1;
       background-image: url("../../img/cat-section-eating-desktop.png");
       background-position-x: right;
       background-repeat: no-repeat;
