@@ -1,5 +1,7 @@
 .page-footer {
-  margin-top: 15px;
+  &--index {
+    margin-top: 15px;
+  }
 
   @media (min-width: $tablet-width) {
     height: 150px;
