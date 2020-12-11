@@ -1,6 +1,8 @@
-// .catalog {
-
-// }
+.catalog {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 68px;
+  }
+}
 
 .catalog__list {
   list-style: none;

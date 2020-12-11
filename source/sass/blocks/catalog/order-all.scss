@@ -32,6 +32,10 @@
   background-image: url("../../../img/icon_gift-mobile.svg");
   background-position: 0 0;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    left: 80px;
+  }
 }
 
 .order-all__text {
@@ -44,4 +48,12 @@
   color: $basic-white;
   width: 161px;
   margin: 0 auto 40px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    // display: block;
+    top: 72px;
+    right: 17.5%;
+    text-align: left;
+  }
 }
