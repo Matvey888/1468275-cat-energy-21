@@ -84,7 +84,7 @@
       height: 280px;
       top: -10px;
       left: 125px;
-      background-image: url("../../img/adventage-1.svg");
+      background-image: url("../../../img/adventage-1.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
     }
@@ -96,7 +96,7 @@
       height: 280px;
       top: -10px;
       left: 123px;
-      background-image: url("../../img/adventage-2.svg");
+      background-image: url("../../../img/adventage-2.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
     }
@@ -108,7 +108,7 @@
       height: 280px;
       top: -10px;
       left: 123px;
-      background-image: url("../../img/adventage-3.svg");
+      background-image: url("../../../img/adventage-3.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
     }
@@ -120,7 +120,7 @@
       height: 280px;
       top: -10px;
       left: 125px;
-      background-image: url("../../img/adventage-4.svg");
+      background-image: url("../../../img/adventage-4.svg");
       background-position: 0 0;
       background-repeat: no-repeat;
     }
@@ -161,40 +161,40 @@
 
   &--img-natural::before {
     top: -4px;
-    background-image: url("../../img/natural1.svg");
+    background-image: url("../../../img/natural1.svg");
 
     @media (min-width: $tablet-width) {
       top: -114px;
-      background-image: url("../../img/natural2.svg");
+      background-image: url("../../../img/natural2.svg");
     }
   }
 
   &--img-powder::before {
-    background-image: url("../../img/powder.svg");
+    background-image: url("../../../img/powder.svg");
 
     @media (min-width: $tablet-width) {
       top: -114px;
-      background-image: url("../../img/powder2.svg");
+      background-image: url("../../../img/powder2.svg");
     }
   }
 
   &--img-eating::before {
     top: -1px;
-    background-image: url("../../img/eating.svg");
+    background-image: url("../../../img/eating.svg");
 
     @media (min-width: $tablet-width) {
       top: -114px;
-      background-image: url("../../img/eating2.svg");
+      background-image: url("../../../img/eating2.svg");
     }
   }
 
   &--img-time::before {
     top: -3px;
-    background-image: url("../../img/time1.svg");
+    background-image: url("../../../img/time1.svg");
 
     @media (min-width: $tablet-width) {
       top: -114px;
-      background-image: url("../../img/time2.svg");
+      background-image: url("../../../img/time2.svg");
     }
   }
 

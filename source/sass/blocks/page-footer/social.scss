@@ -34,35 +34,35 @@
   display: flex;
 
   &--vk {
-    background-image: url("../../img/icon_vkontakte.svg");
+    background-image: url("../../../img/icon_vkontakte.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       margin: 5px 0 0 10px;
-      background-image: url("../../img/icon_vkontakte-full.svg");
+      background-image: url("../../../img/icon_vkontakte-full.svg");
     }
   }
 
   &--instagram {
-    background-image: url("../../img/icon_instagram.svg");
+    background-image: url("../../../img/icon_instagram.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       margin: 9px 0 0 27px;
-      background-image: url("../../img/icon_instagram-full.svg");
+      background-image: url("../../../img/icon_instagram-full.svg");
     }
   }
 
   &--fb {
-    background-image: url("../../img/icon_facebook.svg");
+    background-image: url("../../../img/icon_facebook.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       margin: 0 0 0 15px;
-      background-image: url("../../img/icon_facebook-full.svg");
+      background-image: url("../../../img/icon_facebook-full.svg");
     }
   }
 
