@@ -7,6 +7,10 @@
   background-repeat: no-repeat;
   background-size: 100% 64%;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../../img/cat_section_eating-2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 117px;
     height: 810px;

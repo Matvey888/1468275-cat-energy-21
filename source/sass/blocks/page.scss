@@ -25,8 +25,12 @@
       background-image: url("../../img/cat-section-eating-desktop.jpg");
       background-position-x: right;
       background-repeat: no-repeat;
-      background-color: $basic-green;
-      background-size: 100% 694px;
+      background-color: $basic-white;
+      background-size: 720px 694px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/cat-section-eating-desktop-2x.jpg");
+      }
     }
   }
 }

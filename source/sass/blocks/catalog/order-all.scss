@@ -8,12 +8,24 @@
   background-image: url("../../../img/gift-photo-mobile.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../../img/gift-photo-mobile-2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     max-width: 708px;
     height: 200px;
     // background-size: 708px auto;
     background-image: url("../../../img/gift-photo-tablet.jpg");
+<<<<<<< HEAD
+=======
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../img/gift-photo-tablet-2x.jpg");
+    }
+>>>>>>> 3d78822 (Адаптивная графика всех страниц)
   }
 
   @media (min-width: $desktop-width) {
@@ -24,6 +36,10 @@
     background-image: url("../../../img/gift-photo-desktop.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../img/gift-photo-desktop-2x.jpg");
+    }
   }
 }
 

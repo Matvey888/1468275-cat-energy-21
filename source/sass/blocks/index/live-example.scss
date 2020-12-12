@@ -27,7 +27,6 @@
     display: flex;
     justify-content: space-between;
     padding: 0 10px;
-    // background-image: linear-gradient($basic-white 0%, $basic-white 30%, $basic-grey 30%, $basic-grey 100%);
   }
 }
 
@@ -185,8 +184,6 @@
   @media (min-width: $desktop-width) {
     position: relative;
     height: 517px;
-    // overflow: hidden;
-    // margin-bottom: 53px;
   }
 }
 
