@@ -50,6 +50,11 @@
     top: 81px;
     left: 41%;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 79px;
+    left: 38%;
+  }
 }
 
 .catalog-all__show-text-more::before {
