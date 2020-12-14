@@ -20,13 +20,10 @@
     height: 200px;
     // background-size: 708px auto;
     background-image: url("../../../img/gift-photo-tablet.jpg");
-<<<<<<< HEAD
-=======
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../../img/gift-photo-tablet-2x.jpg");
     }
->>>>>>> 3d78822 (Адаптивная графика всех страниц)
   }
 
   @media (min-width: $desktop-width) {
