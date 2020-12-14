@@ -1,6 +1,15 @@
 .description-table__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+
   @media (min-width: $tablet-width) {
-    // padding-bottom: 10px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 8px;
   }
 }
 
@@ -21,6 +30,10 @@
     line-height: 16px;
     width: 252px;
     border-bottom: 1px solid $special-grey;
-    padding: 5px;
+    padding: 3px 3px 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 3px 7px 5px;
   }
 }

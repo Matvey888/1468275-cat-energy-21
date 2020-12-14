@@ -1,3 +1,15 @@
+.additional-products {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+  }
+}
+
 .additional-products__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
@@ -11,45 +23,66 @@
   font-size: 24px;
   line-height: 24px;
   margin: 0;
-  padding: 28px 0 20px 20px;
+  padding: 8px 0 20px;
   color: $basic-black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
 
   &::after {
     content: "";
+    position: absolute;
     display: block;
-    width: 53px;
+    width: 50vw;
     height: 2px;
+    top: 25px;
+    right: calc(-50vw + 35px);
     background-color: $basic-green;
 
     @media (min-width: $tablet-width) {
-      width: 300px;
+      top: 22px;
+      width: 100vw;
+      right: calc(-100vw + 300px);
     }
 
     @media (min-width: $desktop-width) {
-      width: 850px;
+      right: -38vw;
     }
   }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    padding: 68px 0 80px 30px;
+    padding: 0 0 0 37px;
+    margin-bottom: 80px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 50vw;
+      height: 2px;
+      background-color: $basic-green;
+      top: 22px;
+      left: -50vw;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 10px;
+    padding: 0;
+    margin-bottom: 65px;
+
+    &::before {
+      left: -53vw;
+    }
   }
 }
 
 .additional-products__list {
   list-style: none;
-  padding: 0 20px;
+  padding: 0;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px;
+    margin-bottom: 68px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,7 +92,7 @@
 
 .additional-products__item {
   border-bottom: 1px solid $special-grey;
-  padding: 0 0 19px;
+  padding: 0 0 17px;
 
   &:first-child {
     border-top: 1px solid $special-grey;
@@ -70,7 +103,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     border: 1px solid $special-grey;
-    padding: 10px 37px;
+    padding: 12px 36px 26px 37px;
     box-sizing: border-box;
 
     &:not(:first-child) {
@@ -80,6 +113,10 @@
 
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 11px 0 0;
+    border-left: none;
+    border-right: none;
   }
 }
 
@@ -90,6 +127,7 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $special-grey-black-dark;
+  margin: 13px 0 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -108,9 +146,50 @@
   color: $special-dark-grey;
 
   @media (min-width: $tablet-width) {
-    width: 286px;
+    width: 226px;
     font-size: 16px;
     line-height: 20px;
+    justify-content: flex-end;
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 286px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: 40px;
+  }
+}
+
+.additional-products__count {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+
+    &--sweetener {
+      margin-left: 0;
+    }
+
+    &--vitamins {
+      margin-left: 7px;
+    }
+
+    &--milk {
+      margin-right: 50px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}
+
+.additional-products__price {
+  &--water {
+    @media (min-width: $desktop-width) {
+      padding-right: 5px;
+    }
   }
 }
 
@@ -126,5 +205,7 @@
   @media (min-width: $desktop-width) {
     width: 244px;
     flex-grow: 0;
+    margin-top: 3px;
+    margin-right: 0;
   }
 }

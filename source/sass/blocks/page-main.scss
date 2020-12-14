@@ -1,7 +1,8 @@
 .page-main {
   background-color: $basic-white;
 
-  &--form {
+  &--form,
+  &--catalog {
     margin-bottom: 15px;
     overflow-x: hidden;
   }
@@ -42,11 +43,20 @@
 }
 
 .page-main__catalog-heading {
+  margin-top: 3px;
   border-bottom: 1px solid $special-grey-lighten;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     border: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 30px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    padding: 7px 0 29px;
   }
 }

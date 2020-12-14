@@ -1,39 +1,39 @@
 .product {
-  padding-bottom: 11px;
+  // padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     width: 324px;
-    min-height: 430px;
-    background-color: $basic-grey;
+    height: 511px;
+    background-color: transparent;
+    background-image: linear-gradient($basic-white 0, $basic-white 16%, $basic-grey 16%, $basic-grey 100%);
     box-sizing: border-box;
-    margin: 20px 0;
+    margin: 24px 0 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    position: relative;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    margin-bottom: 4px;
   }
 }
 
 .product__container {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 13px;
+  margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
     // justify-content: flex-start;
     // flex-wrap: wrap;
     margin: 0;
+    margin-bottom: 20px;
   }
 }
 
 .product__title {
   margin: 0;
-  padding: 0 71px 18px 0;
+  padding: 4px 0 14px 0;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -46,7 +46,7 @@
     text-align: center;
     width: 145px;
     height: 47px;
-    margin: 11px auto;
+    margin: 13px auto 19px;
     padding: 0;
     // box-sizing: border-box;
   }
@@ -71,26 +71,31 @@
   height: 112px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
+    // position: absolute;
     width: 168px;
     height: 200px;
-    top: 100px;
-    left: 30%;
+    margin: 10px auto 20px;
     box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
     width: 172px;
     height: 196px;
+    margin: 2px auto 33px;
   }
 }
 
 .product__info {
+  min-width: 140px;
   padding-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     // margin: 0 auto;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 4px;
   }
 }
 
@@ -122,7 +127,14 @@
   width: auto;
 
   @media (min-width: $tablet-width) {
-    // width: 114px;
     align-self: center;
+  }
+}
+
+.product__br {
+  display: none;
+
+  @media (max-width: $mobile-width-only) {
+    display: block;
   }
 }
