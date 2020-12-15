@@ -161,40 +161,40 @@
 
   &--img-natural::before {
     top: -4px;
-    background-image: url("../../../img/natural1.svg");
+    background-image: url("../../../img/natural1.png");
 
     @media (min-width: $tablet-width) {
       top: -114px;
-      background-image: url("../../../img/natural2.svg");
+      background-image: url("../../../img/natural2.png");
     }
   }
 
   &--img-powder::before {
-    background-image: url("../../../img/powder.svg");
+    background-image: url("../../../img/powder1.png");
 
     @media (min-width: $tablet-width) {
       top: -114px;
-      background-image: url("../../../img/powder2.svg");
+      background-image: url("../../../img/powder2.png");
     }
   }
 
   &--img-eating::before {
     top: -1px;
-    background-image: url("../../../img/eating.svg");
+    background-image: url("../../../img/eating1.png");
 
     @media (min-width: $tablet-width) {
       top: -114px;
-      background-image: url("../../../img/eating2.svg");
+      background-image: url("../../../img/eating2.png");
     }
   }
 
   &--img-time::before {
     top: -3px;
-    background-image: url("../../../img/time1.svg");
+    background-image: url("../../../img/time1.png");
 
     @media (min-width: $tablet-width) {
       top: -114px;
-      background-image: url("../../../img/time2.svg");
+      background-image: url("../../../img/time2.png");
     }
   }
 
