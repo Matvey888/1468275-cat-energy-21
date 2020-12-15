@@ -22,11 +22,15 @@
       height: 694px;
       top: 0;
       right: 0;
+      background-color: $basic-green;
       background-image: url("../../img/cat-section-eating-desktop.jpg");
       background-position-x: right;
       background-repeat: no-repeat;
-      background-color: $basic-green;
-      background-size: 100% 694px;
+      background-size: 720px 694px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../img/cat-section-eating-desktop-2x.jpg");
+      }
     }
   }
 }
