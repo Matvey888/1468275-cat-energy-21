@@ -159,26 +159,44 @@
 
   <footer class="page-footer page-footer--special">
     <div class="page-footer__container">
-      <a class="page-footer__logo page-footer__logo--link">
+      <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="img/footer-logo-2.svg" width="130" height="25" alt="footer logo">
       </a>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vk" href="#"><span class="visually-hidden">Vk</span></a>
+            <a class="social__link social__link--vk" href="#">
+              <svg class="social__icon" viewbox="0 0 23 16">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="#"><span class="visually-hidden">Instagram</span></a>
+            <a class="social__link social__link--instagram" href="#">
+              <svg class="social__icon social__icon--instagram" viewbox="0 0 16 16">
+                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+              </svg>
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Facebook</span></a>
+            <a class="social__link social__link--fb" href="#">
+              <svg class="social__icon" viewbox="0 0 22 22">
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
+              </svg>
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="copyright__link-logo" href="https://htmlacademy.ru/intensive/adaptive"
-          aria-label="Переход на сайт HTML Academy"></a>
+          aria-label="Переход на сайт HTML Academy">
+        <svg class="copyright__link-logo-academy" viewbox="0 0 27 34">
+          <use xlink:href="img/sprite.svg#academy-logo"></use>
+        </svg></a>
       </div>
     </div>
   </footer>

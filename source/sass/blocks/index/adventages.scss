@@ -86,11 +86,16 @@
 .adventages__item-adventage-2,
 .adventages__item-adventage-3,
 .adventages__item-adventage-4 {
-  position: absolute;
-  width: 112px;
-  height: 280px;
-  top: -10px;
-  left: 125px;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    width: 112px;
+    height: 280px;
+    top: -10px;
+    left: 125px;
+  }
 }
 
 .adventages__text {
