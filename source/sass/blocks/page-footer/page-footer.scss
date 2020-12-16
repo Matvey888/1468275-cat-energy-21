@@ -42,6 +42,14 @@
   padding: 25px 0 29px;
   border-bottom: 1px solid $color-grey;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     border: none;
     // align-items: center;

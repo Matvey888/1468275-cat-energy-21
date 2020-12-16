@@ -18,6 +18,10 @@
   line-height: 18px;
   color: $special-dark-grey;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 
@@ -29,8 +33,8 @@
   &:hover {
     color: $basic-green;
   }
-  // text-decoration: none;
-  // background-image: url("../../../img/logo-htmlacademy.svg");
-  // background-position: 0 0;
-  // background-repeat: no-repeat;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
