@@ -28,12 +28,21 @@
   display: flex;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     background-color: transparent;
     border-bottom: 1px dotted $color-grey-b2;
+
+    &:hover {
+      border-bottom: 1px solid $color-grey-b2;
+    }
+
+    &:active {
+      border: none;
+    }
   }
 }
 
@@ -61,6 +70,7 @@
   margin: 3px;
   background: $basic-green;
   border-radius: 6px;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -73,5 +83,13 @@
     box-shadow: 0 1px 3px $color-black-shadow;
     border-radius: 50%;
     margin: 0;
+
+    &:hover {
+      box-shadow: (0px 2px 4px $color-black-shadow-hover);
+    }
+
+    &:active {
+      box-shadow: (0px 3px 5px $color-black-shadow-active);
+    }
   }
 }

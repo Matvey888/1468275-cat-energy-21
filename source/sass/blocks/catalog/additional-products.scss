@@ -196,6 +196,14 @@
 .additional-products__order {
   height: 40px;
 
+  &:hover {
+    background-color: $special-green;
+  }
+
+  &:active {
+    color: $special-white;
+  }
+
   @media (min-width: $tablet-width) {
     width: 632px;
     flex-grow: 1;

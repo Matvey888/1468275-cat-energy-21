@@ -89,6 +89,14 @@
   background-color: $basic-grey;
   height: 40px;
 
+  &:hover {
+    background-color: $special-grey-lighten;
+  }
+
+  &:active {
+    color: $special-dark-grey-opacity;
+  }
+
   @media (min-width: $tablet-width) {
     width: 248px;
     margin: 0 auto;

@@ -55,6 +55,14 @@
 .product__item-order {
   height: 40px;
 
+  &:hover {
+    background-color: $special-green;
+  }
+
+  &:active {
+    color: $special-white;
+  }
+
   @media (min-width: $tablet-width) {
     width: 248px;
     align-self: center;

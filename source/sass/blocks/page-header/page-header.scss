@@ -26,13 +26,20 @@
   margin: 0;
   padding: 12px 20px 16px 20px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
-    padding: 5px 0 0 0;
+    padding: 5px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 202px;
     height: 59px;
-    padding: 5px 0 0;
   }
 }
