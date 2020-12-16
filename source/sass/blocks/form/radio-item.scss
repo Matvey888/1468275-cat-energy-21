@@ -64,3 +64,11 @@
     left: 38px;
   }
 }
+
+.radio-item__label:hover::before {
+  border-color: $color-grey-ba;
+}
+
+.radio-item__input:disabled + .radio-item__label {
+  opacity: 0.3;
+}

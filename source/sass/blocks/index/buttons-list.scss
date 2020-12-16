@@ -85,11 +85,11 @@
     margin: 0;
 
     &:hover {
-      box-shadow: (0px 2px 4px $color-black-shadow-hover);
+      box-shadow: 0 2px 4px $color-black-shadow-hover;
     }
 
     &:active {
-      box-shadow: (0px 3px 5px $color-black-shadow-active);
+      box-shadow: 0 3px 5px $color-black-shadow-active;
     }
   }
 }
