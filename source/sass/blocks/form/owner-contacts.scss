@@ -110,6 +110,7 @@
 }
 
 .owner-contacts__icon-email {
+  stroke: $basic-black;
   position: absolute;
   right: 15px;
 
@@ -123,6 +124,7 @@
 }
 
 .owner-contacts__icon-phone {
+  stroke: $basic-black;
   position: absolute;
   right: 15px;
 
@@ -135,7 +137,7 @@
   }
 }
 
-.owner-contacts__input:invalid + .owner-contacts__icon-phone {
+.owner-contacts__input:focus:invalid + .owner-contacts__icon-phone {
   stroke: $status-error;
 }
 
@@ -143,7 +145,7 @@
   stroke: $basic-green;
 }
 
-.owner-contacts__input:invalid + .owner-contacts__icon-email {
+.owner-contacts__input:focus:invalid + .owner-contacts__icon-email {
   stroke: $status-error;
 }
 

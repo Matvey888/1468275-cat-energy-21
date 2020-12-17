@@ -144,14 +144,16 @@
     border: 2px solid $special-grey;
   }
 
-  &:invalid {
-    border: 2px solid $status-error;
-  }
-
   &:focus {
     border: 2px solid $basic-black;
     outline: none;
   }
+
+  &:focus:invalid {
+    border: 2px solid $status-error;
+  }
+
+
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -162,6 +164,15 @@
 
 .form__input-text::placeholder {
   text-transform: uppercase;
+}
+
+.form__input-text::-webkit-outer-spin-button,
+.form__input-text::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.form__input-text[type="number"] {
+  appearance: none;
 }
 
 .form__fieldset {
