@@ -154,69 +154,12 @@
   line-height: 18px;
   color: $special-dark-grey;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 60px;
-  //   height: 60px;
-  //   top: 0;
-  //   left: 0;
-  //   background-repeat: no-repeat;
-  //   background-position: 0 0;
-
-    // @media (min-width: $tablet-width) {
-    //   width: 80px;
-    //   height: 80px;
-  //     left: 0;
-  //   }
-  // }
-
-  // &--img-natural::before {
-  //   top: -4px;
-  //   background-image: url("../../../img/natural-mobile.png");
-
-  //   @media (min-width: $tablet-width) {
-  //     top: -114px;
-  //     background-image: url("../../../img/natural.png");
-  //   }
-  // }
-
-  // &--img-powder::before {
-  //   background-image: url("../../../img/powder-mobile.png");
-
-  //   @media (min-width: $tablet-width) {
-  //     top: -114px;
-  //     background-image: url("../../../img/powder.png");
-  //   }
-  // }
-
-  // &--img-eating::before {
-  //   top: -1px;
-  //   background-image: url("../../../img/eating-mobile.png");
-
-  //   @media (min-width: $tablet-width) {
-  //     top: -114px;
-  //     background-image: url("../../../img/eating.png");
-  //   }
-  // }
-
-  // &--img-time::before {
-  //   top: -3px;
-  //   background-image: url("../../../img/time-mobile.png");
-
-  //   @media (min-width: $tablet-width) {
-  //     top: -114px;
-  //     background-image: url("../../../img/time.png");
-  //   }
-  // }
-
   @media (min-width: $tablet-width) {
     padding: 0;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    // margin: 151px 0 57px;
   }
 }
 
