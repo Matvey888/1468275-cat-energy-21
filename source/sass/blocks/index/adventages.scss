@@ -130,34 +130,18 @@
     top: -4px;
     background-image: url("../../../img/natural-mobile.png");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../../img/natural-mobile-2x.png");
-    }
-
     @media (min-width: $tablet-width) {
       top: -114px;
       background-image: url("../../../img/natural.png");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../../img/natural-2x.png");
-      }
     }
   }
 
   &--img-powder::before {
     background-image: url("../../../img/powder-mobile.png");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../../img/powder-mobile.png");
-    }
-
     @media (min-width: $tablet-width) {
       top: -114px;
       background-image: url("../../../img/powder.png");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../../img/powder-mobile-2x.png");
-      }
     }
   }
 
@@ -165,17 +149,9 @@
     top: -1px;
     background-image: url("../../../img/eating-mobile.png");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../../img/eating-mobile-2x.png");
-    }
-
     @media (min-width: $tablet-width) {
       top: -114px;
       background-image: url("../../../img/eating.png");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../../img/eating-2x.png");
-      }
     }
   }
 
@@ -183,17 +159,9 @@
     top: -3px;
     background-image: url("../../../img/time-mobile.png");
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../../../img/time-mobile-2x.png");
-    }
-
     @media (min-width: $tablet-width) {
       top: -114px;
       background-image: url("../../../img/time.png");
-
-      @media (min-resolution: 2dppx) {
-        background-image: url("../../../img/time-2x.png");
-      }
     }
   }
 
