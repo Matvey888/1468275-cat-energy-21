@@ -3,7 +3,7 @@
 }
 
 .data-cat__item {
-  margin: 0 0 16px;
+  margin: 0 0 14px;
 
   &:first-child {
     padding: 3px 0 0;
@@ -49,6 +49,7 @@
   }
 
   &--age {
+
     width: 61%;
 
     @media (min-width: $tablet-width) {

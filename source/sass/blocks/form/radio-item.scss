@@ -64,3 +64,15 @@
     left: 38px;
   }
 }
+
+.radio-item__input:focus-within + .radio-item__label::before {
+  outline: 1px solid $color-grey-ba;
+}
+
+.radio-item__label:hover::before {
+  border-color: $color-grey-ba;
+}
+
+.radio-item__input:disabled + .radio-item__label {
+  opacity: 0.3;
+}

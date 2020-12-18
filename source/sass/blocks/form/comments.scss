@@ -52,6 +52,11 @@
 }
 
 .comments__textarea {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
   resize: none;
   border: 1px solid $color-grey-universal;
   width: 280px;
@@ -61,6 +66,8 @@
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
     width: 94%;
     height: 174px;
     padding-left: 20px;

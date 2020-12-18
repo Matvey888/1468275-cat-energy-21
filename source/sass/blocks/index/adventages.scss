@@ -73,61 +73,74 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    height: 280px;
+    min-height: 280px;
     margin: 0;
     padding: 0;
-
-    &:first-child::before {
-      position: absolute;
-      content: "";
-      width: 112px;
-      height: 280px;
-      top: -10px;
-      left: 125px;
-      background-image: url("../../../img/adventage-1.svg");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(2)::before {
-      position: absolute;
-      content: "";
-      width: 112px;
-      height: 280px;
-      top: -10px;
-      left: 124px;
-      background-image: url("../../../img/adventage-2.svg");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-    }
-
-    &:nth-child(3)::before {
-      position: absolute;
-      content: "";
-      width: 112px;
-      height: 280px;
-      top: -10px;
-      left: 123px;
-      background-image: url("../../../img/adventage-3.svg");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-    }
-
-    &:last-child::before {
-      position: absolute;
-      content: "";
-      width: 112px;
-      height: 280px;
-      top: -10px;
-      left: 124px;
-      background-image: url("../../../img/adventage-4.svg");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-    }
   }
 
   @media (min-width: $desktop-width) {
     align-items: center;
+  }
+}
+
+.adventages__item-img {
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    left: 0;
+  }
+
+  &--natural {
+    top: -4px;
+
+    @media (min-width: $tablet-width) {
+      top: -10px;
+    }
+  }
+
+  &--powder {
+    @media (min-width: $tablet-width) {
+      top: -10px;
+    }
+  }
+
+  &--eating {
+    top: -1px;
+
+    @media (min-width: $tablet-width) {
+      top: -8px;
+    }
+  }
+
+  &--time {
+    top: -3px;
+
+    @media (min-width: $tablet-width) {
+      top: -8px;
+    }
+  }
+}
+
+.adventages__item-adventage-1,
+.adventages__item-adventage-2,
+.adventages__item-adventage-3,
+.adventages__item-adventage-4 {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    width: 112px;
+    height: 280px;
+    top: -10px;
+    left: 125px;
   }
 }
 
@@ -142,69 +155,12 @@
   line-height: 18px;
   color: $special-dark-grey;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 0;
-    left: 0;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-
-    @media (min-width: $tablet-width) {
-      width: 80px;
-      height: 80px;
-      left: 0;
-    }
-  }
-
-  &--img-natural::before {
-    top: -4px;
-    background-image: url("../../../img/natural1.svg");
-
-    @media (min-width: $tablet-width) {
-      top: -114px;
-      background-image: url("../../../img/natural2.svg");
-    }
-  }
-
-  &--img-powder::before {
-    background-image: url("../../../img/powder.svg");
-
-    @media (min-width: $tablet-width) {
-      top: -114px;
-      background-image: url("../../../img/powder2.svg");
-    }
-  }
-
-  &--img-eating::before {
-    top: -1px;
-    background-image: url("../../../img/eating.svg");
-
-    @media (min-width: $tablet-width) {
-      top: -114px;
-      background-image: url("../../../img/eating2.svg");
-    }
-  }
-
-  &--img-time::before {
-    top: -3px;
-    background-image: url("../../../img/time1.svg");
-
-    @media (min-width: $tablet-width) {
-      top: -114px;
-      background-image: url("../../../img/time2.svg");
-    }
-  }
-
   @media (min-width: $tablet-width) {
     padding: 0;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    // margin: 151px 0 57px;
   }
 }
 
