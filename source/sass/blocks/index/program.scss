@@ -118,8 +118,9 @@
   }
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     top: 230px;
-    left: 112px;
+    left: 92px;
     font-size: 20px;
     line-height: 20px;
     width: 244px;
@@ -129,7 +130,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 233px;
-    left: 90px;
+    position: static;
+    margin-top: 52px;
+    margin-left: 90px;
   }
 }

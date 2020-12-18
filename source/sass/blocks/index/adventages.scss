@@ -73,7 +73,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
-    height: 280px;
+    min-height: 280px;
     margin: 0;
     padding: 0;  }
 
