@@ -134,6 +134,10 @@
   }
 }
 
+.extra__input-checkbox:focus-within + .extra__label-checkbox::before {
+  outline: 1px solid $color-grey-ba;
+}
+
 .extra__input-checkbox:disabled + .extra__label-checkbox {
   opacity: 0.3;
 }
