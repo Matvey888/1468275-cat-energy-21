@@ -16,12 +16,16 @@
   &--closed .main-nav__toggle::before {
     content: "";
     position: absolute;
-    top: 15px;
+    top: 20px;
     left: 15px;
     width: 24px;
     height: 1.5px;
     background-color: $basic-black;
     box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &--closed .main-nav__list {
@@ -60,13 +64,19 @@
       transform: rotate(-45deg);
     }
 
-    &--nojs {
-      display: none;
-    }
-
     @media (min-width: $tablet-width),
       (min-width: $desktop-width) {
       display: none;
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &--nojs .main-nav__toggle {
+      display: none;
+    }
+
+    &--nojs .main-nav__list {
+      display: flex;
     }
   }
 }
