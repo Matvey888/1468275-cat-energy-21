@@ -196,20 +196,15 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .live-example__image {
-    &--before {
-      position: absolute;
-      height: auto;
-      top: -37px;
-      left: -70px;
-      z-index: 2;
-    }
+    display: none;
 
-    &--after {
-      position: absolute;
-      top: -30px;
-      right: -40px;
+    &--show {
+      display: block;
+      width: 100%;
+      max-height: 560px;
+      overflow: hidden;
     }
   }
 }
