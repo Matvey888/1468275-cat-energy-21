@@ -16,19 +16,19 @@
   margin-bottom: 38px;
   padding: 0;
 
-  &::after {
-    top: 44%;
-    right: calc(-60vw + 120px);
-  }
+  // &::after {
+  //   top: 44%;
+  //   // right: calc(-60vw + 120px);
+  // }
 
   @media (min-width: $tablet-width) {
     padding: 0 40px;
     margin-bottom: 64px;
 
-    &::after {
-      top: 48%;
-      right: calc(-60vw + 110px);
-    }
+    // &::after {
+    //   top: 48%;
+    //   // right: calc(-60vw + 110px);
+    // }
   }
 
   @media (min-width: $desktop-width) {
@@ -36,10 +36,10 @@
     // margin-left: 70px;
     margin-bottom: 63px;
 
-    &::after {
-      top: 50%;
-      right: calc(-30vw + 10px);
-    }
+    // &::after {
+    //   top: 50%;
+    //   right: calc(-30vw + 10px);
+    // }
   }
 }
 

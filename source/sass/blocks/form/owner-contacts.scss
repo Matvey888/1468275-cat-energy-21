@@ -14,32 +14,23 @@
 .owner-contacts__legend {
   padding: 0;
 
-  @media (max-width: $mobile-width-only) {
-    &::after {
-      top: 12px;
-    }
-  }
-
-
   @media (min-width: $tablet-width) {
     padding: 0 40px;
-    // margin-left: 30px;
     margin-bottom: 76px;
-
-    &::after {
-      top: 17px;
-      right: calc(-100vw + 115px);
-    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
     margin: 0;
-    // margin-left: 70px;
     margin-bottom: 75px;
+  }
+}
 
+.owner-contacts__text {
+  @media (max-width: $mobile-width-only) {
     &::after {
-      right: calc(-100vw + 668px);
+      top: 30%;
+      right: calc(-100vw - 45px);
     }
   }
 }
@@ -54,7 +45,6 @@
 
 .owner-contacts__list {
   margin: 35px 0 0;
-  // padding: 0 19px;
 
   @media (min-width: $tablet-width) {
     margin: 38px 0 0;
@@ -62,7 +52,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    // width: 1220px;
     padding: 0;
     margin: 37px auto;
     display: flex;
