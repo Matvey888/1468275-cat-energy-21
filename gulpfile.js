@@ -94,7 +94,7 @@ const copy = () => {
   return gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
-    "source/img/**/*.{ipg,png,svg}",
+    "source/img/**/*.{jpg,png,svg}",
   ], {
     base: "source"
   })
@@ -128,7 +128,7 @@ exports.server = server;
 
 // Reload
 
-const reload = () => {
+const reload = done => {
   sync.reload();
   done();
 }
