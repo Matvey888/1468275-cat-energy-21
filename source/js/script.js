@@ -1,5 +1,6 @@
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
+
 let buttonBefore = document.querySelector('.buttons-list__button--before');
 let buttonAfter = document.querySelector('.buttons-list__button--after');
 let imgBefore = document.querySelector('.live-example__image--before');
