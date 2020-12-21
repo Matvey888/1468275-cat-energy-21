@@ -221,3 +221,19 @@
     }
   }
 }
+
+.live-example__image {
+  @media (min-width: $desktop-width) {
+    &--before {
+      position: absolute;
+      top: -43px;
+      left: 39px;
+    }
+
+    &--after {
+      position: absolute;
+      top: -40px;
+      left: 45px;
+    }
+  }
+}
