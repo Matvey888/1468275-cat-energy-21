@@ -94,15 +94,16 @@
 }
 
 .program__img {
-  position: absolute;
-  // margin: 0 auto;
-  // padding: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   left: 20px;
   width: 280px;
   height: 270px;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     left: 30px;
     top: 200px;
     height: 610px;
