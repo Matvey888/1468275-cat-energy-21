@@ -1,25 +1,42 @@
 .program {
   margin: 0 auto;
   min-height: 480px;
+  background-color: transparent;
   position: relative;
-  background-image: url("../../../img/cat_section_eating.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: 100% 64%;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../../../img/cat_section_eating-2x.jpg");
+
+  @media (max-width: $mobile-width-only) {
+    z-index: 0;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 63%;
+      background-color: $basic-green;
+      background-image: url("../../../img/cat_section_eating.jpg");
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../../img/cat_section_eating-2x.jpg");
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
     padding-left: 117px;
-    height: 810px;
-    background: none;
+    min-height: 810px;
+    // background: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 1240px;
-    height: 550px;
+    min-height: 550px;
     padding: 0;
     // padding-left: 145px;
   }
