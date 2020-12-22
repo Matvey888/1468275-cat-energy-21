@@ -1,7 +1,12 @@
 .adventages {
   border-bottom: 1px solid $special-border-gray;
 
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
   @media (min-width: $desktop-width) {
+    min-width: 1220px;
     border: none;
   }
 }
@@ -58,6 +63,7 @@
 
 .adventages__item {
   position: relative;
+  min-height: 54px;
   margin: 0 0 22px;
 
   @media (max-width: $mobile-width-only) {
