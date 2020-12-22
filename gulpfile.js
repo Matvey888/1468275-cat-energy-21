@@ -22,7 +22,6 @@ const styles = () => {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(rename("style.css"))
-    .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(postcss([
       autoprefixer(),
