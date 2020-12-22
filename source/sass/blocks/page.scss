@@ -26,7 +26,8 @@
       background-image: url("../../img/cat-section-eating-desktop.jpg");
       background-position-x: right;
       background-repeat: no-repeat;
-      background-size: 720px 694px;
+      // background-size: 720px 694px;
+      background-size: cover;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../img/cat-section-eating-desktop-2x.jpg");

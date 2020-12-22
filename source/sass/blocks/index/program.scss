@@ -1,15 +1,13 @@
 .program {
   margin: 0 auto;
-  height: 480px;
+  min-height: 480px;
   position: relative;
-  background-image: linear-gradient(45deg, $basic-green, $basic-green);
   background-image: url("../../../img/cat_section_eating.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100% 64%;
 
   @media (min-resolution: 2dppx) {
-    background-image: linear-gradient(45deg, $basic-green, $basic-green);
     background-image: url("../../../img/cat_section_eating-2x.jpg");
   }
 
