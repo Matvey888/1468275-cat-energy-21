@@ -130,10 +130,12 @@
 }
 
 .owner-contacts__input:focus:invalid + .owner-contacts__icon-phone {
+  fill: $status-error;
   stroke: $status-error;
 }
 
 .owner-contacts__input:focus + .owner-contacts__icon-phone {
+  fill: $basic-green;
   stroke: $basic-green;
 }
 
