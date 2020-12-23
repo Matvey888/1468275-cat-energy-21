@@ -66,6 +66,96 @@
   min-height: 54px;
   margin: 0 0 22px;
 
+  &::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      left: 0;
+    }
+  }
+
+  &--natural::before {
+    top: -4px;
+    background-image: url("../../../img/natural-mobile.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../img/natural-mobile-2x.png");
+    }
+
+
+    @media (min-width: $tablet-width) {
+      top: -10px;
+      background-image: url("../../../img/natural.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../../img/natural-mobile-2x.png");
+      }
+    }
+  }
+
+  &--powder::before {
+    background-image: url("../../../img/powder-mobile.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../img/powder-mobile-2x.png");
+    }
+
+    @media (min-width: $tablet-width) {
+      top: -10px;
+      background-image: url("../../../img/powder.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../../img/powder-2x.png");
+      }
+    }
+  }
+
+  &--eating::before {
+    top: -1px;
+    background-image: url("../../../img/eating-mobile.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../img/eating-mobile-2x.png");
+    }
+
+    @media (min-width: $tablet-width) {
+      top: -8px;
+      background-image: url("../../../img/eating.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../../img/eating-2x.png");
+      }
+    }
+  }
+
+  &--time::before {
+    top: -3px;
+    background-image: url("../../../img/time-mobile.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../img/time-mobile-2x.png");
+    }
+
+    @media (min-width: $tablet-width) {
+      top: -8px;
+      background-image: url("../../../img/time.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../../../img/time-2x.png");
+      }
+    }
+  }
+
   @media (max-width: $mobile-width-only) {
     &:nth-child(2) {
       margin: 0 0 27px;
@@ -86,51 +176,6 @@
 
   @media (min-width: $desktop-width) {
     align-items: center;
-  }
-}
-
-.adventages__item-img {
-  display: block;
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  top: 0;
-  left: 0;
-
-  @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 80px;
-    left: 0;
-  }
-
-  &--natural {
-    top: -4px;
-
-    @media (min-width: $tablet-width) {
-      top: -10px;
-    }
-  }
-
-  &--powder {
-    @media (min-width: $tablet-width) {
-      top: -10px;
-    }
-  }
-
-  &--eating {
-    top: -1px;
-
-    @media (min-width: $tablet-width) {
-      top: -8px;
-    }
-  }
-
-  &--time {
-    top: -3px;
-
-    @media (min-width: $tablet-width) {
-      top: -8px;
-    }
   }
 }
 
