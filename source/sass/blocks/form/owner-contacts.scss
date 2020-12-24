@@ -29,7 +29,7 @@
 .owner-contacts__text {
   @media (max-width: $mobile-width-only) {
     &::after {
-      top: 30%;
+      top: 40%;
       right: calc(-100vw - 45px);
     }
   }
