@@ -53,7 +53,7 @@
 }
 
 .product__item-order {
-  height: 40px;
+  min-height: 40px;
 
   &:hover {
     background-color: $special-green;

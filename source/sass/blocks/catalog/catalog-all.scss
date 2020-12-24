@@ -87,7 +87,7 @@
   line-height: 0px;
   color: $special-dark-grey;
   background-color: $basic-grey;
-  height: 40px;
+  min-height: 40px;
 
   &:hover {
     background-color: $special-grey-lighten;
