@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи. Каталог</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
 </head>
 
 <body class="page__body">
@@ -277,8 +279,8 @@
           <a href="#" class="product__item-order button">заказать</a>
         </li>
         <li class="products__item catalog-all">
-          <p class="catalog-all__show-text-more">Показать еще<br class="catalog-all__show-br"> 100500 товаров</p>
-          <p class="catalog-all__show-text-small">На самом деле вкусов<br class="catalog-all__show-br"> гораздо больше!</p>
+          <p class="catalog-all__show-text-more">Показать еще<br class="catalog-all__show-br"><wbr> 100500 товаров</p>
+          <p class="catalog-all__show-text-small">На самом деле вкусов<br class="catalog-all__show-br"><wbr> гораздо больше!</p>
           <a class="catalog-all__show-link button" href="#">показать все</a>
         </li>
       </ul>
@@ -324,7 +326,7 @@
           </li>
         </ul>
         <div class="additional-products__order-all order-all">
-          <svg class="order-all__icon-gift" viewbox="0 0 78 80">
+          <svg class="order-all__icon-gift" width="78" height="80" viewbox="0 0 78 80">
             <use xlink:href="img/sprite.svg#icon-gift"></use>
           </svg>
           <p class="order-all__text">Закажите все<br class="order-all__text-br"> и получите чехол для кота в подарок!</p>
@@ -365,7 +367,7 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vk" href="#">
-              <svg class="social__icon" viewbox="0 0 23 16">
+              <svg class="social__icon" width="23" height="16" viewbox="0 0 23 16">
                 <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
               <span class="visually-hidden">Вконтакте</span>
@@ -373,7 +375,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="#">
-              <svg class="social__icon social__icon--instagram" viewbox="0 0 16 16">
+              <svg class="social__icon social__icon--instagram" width="16" height="16" viewbox="0 0 16 16">
                 <use xlink:href="img/sprite.svg#icon-instagram"></use>
               </svg>
               <span class="visually-hidden">Инстаграм</span>
@@ -381,7 +383,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--fb" href="#">
-              <svg class="social__icon" viewbox="0 0 22 22">
+              <svg class="social__icon" width="22" height="22" viewbox="0 0 22 22">
                 <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
               <span class="visually-hidden">Фейсбук</span>
@@ -393,13 +395,13 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="copyright__link-logo" href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="Переход на сайт HTML Academy">
-        <svg class="copyright__link-logo-academy" viewbox="0 0 27 34">
+        <svg class="copyright__link-logo-academy" width="27" height="34" viewbox="0 0 27 34">
           <use xlink:href="img/sprite.svg#academy-logo"></use>
         </svg></a>
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

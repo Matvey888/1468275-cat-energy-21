@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи. Главная</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body page__body--bg">
@@ -46,29 +48,23 @@
         <source media="(min-width: 768px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet-2x.webp 2x" type="image/webp">
         <source media="(min-width: 768px)" srcset="img/index-can-tablet.jpg 1x, img/index-can-tablet-2x.jpg 2x">
         <source media="(max-width: 767px)" srcset="img/index-can-mobile.webp 1x, img/index-can-mobile-2x.webp 2x" type="image/webp">
-        <img class="program__img" src="img/index-can-mobile.png" srcset="img/index-can-mobile-2x.png" alt="Cat energy - курица">
+        <img class="program__img" src="img/index-can-mobile.png" srcset="img/index-can-mobile-2x.png" width="280" height="270" alt="Cat energy - курица">
       </picture>
       <a class="program__link button" href="form.html">Подобрать программу</a>
     </section>
     <section class="categories wrapper">
       <ul class="categories__list">
-        <li class="categories__list-item categories-item">
+        <li class="categories__list-item categories-item categories-item--slim">
           <h3 class="categories-item__title">Похудение</h3>
-          <svg class="categories-item__slim-img" viewbox="0 0 50 53">
-            <use xlink:href="img/sprite.svg#cat-slim"></use>
-          </svg>
           <p class="categories-item__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="categories-item__link" href="#">Каталог slim</a>
         </li>
         <li class="categories__list-item categories-item categories-item--pro">
           <h3 class="categories-item__title">Набор массы</h3>
-          <svg class="categories-item__pro-img" viewbox="0 0 67 50">
-            <use xlink:href="img/sprite.svg#cat-pro"></use>
-          </svg>
-          <p class="categories-item__text">Заработать авторитет среди дворовых котов<br class="categories-item__br"> и
+          <p class="categories-item__text">Заработать авторитет среди дворовых котов<br class="categories-item__br"><wbr> и
             даже собак? Серия Cat Energy Pro
-            поможет вашему коту нарастить необходимые<br class="categories-item__br"> мышцы!</p>
+            поможет вашему коту нарастить необходимые<br class="categories-item__br"><wbr> мышцы!</p>
           <a class="categories-item__link" href="#">Каталог pro</a>
         </li>
       </ul>
@@ -76,53 +72,21 @@
     <section class="adventages wrapper">
       <h2 class="adventages__title">Как это работает</h2>
       <ul class="adventages__list">
-        <li class="adventages__item">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/natural.webp 1x, img/natural-2x.webp 2x" type="image/webp">
-            <source media="(max-width: 767px)" srcset="img/natural-mobile.webp 1x, img/natural-mobile-2x.webp 2x" type="image/webp">
-            <img class="adventages__item-img adventages__item-img--natural" src="img/natural-mobile.png" srcset="img/natural-mobile-2x.png 2x" alt="Функциональное питание">
-          </picture>
-          <svg class="adventages__item-adventage-1">
-            <use xlink:href="img/sprite.svg#adventage-1"></use>
-          </svg>
+        <li class="adventages__item adventages__item--natural">
           <p class="adventages__text">Функциональное питание содержит только полезные
             питательные вещества.</p>
         </li>
-        <li class="adventages__item">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/powder.webp 1x, img/powder-2x.webp 2x" type="image/webp">
-            <source media="(max-width: 767px)" srcset="img/powder-mobile.webp 1x, img/powder-mobile-2x.webp 2x" type="image/webp">
-            <img class="adventages__item-img adventages__item-img--powder" src="img/powder-mobile.png" srcset="img/powder-mobile-2x.png 2x" alt="Вид порошок">
-          </picture>
-          <svg class="adventages__item-adventage-2">
-            <use xlink:href="img/sprite.svg#adventage-2"></use>
-          </svg>
+        <li class="adventages__item adventages__item--powder">
           <p class="adventages__text">Выпускается в виде порошка, который нужно лишь залить
             кипятком и готово.</p>
         </li>
-        <li class="adventages__item">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/eating.webp 1x, img/eating-2x.webp 2x" type="image/webp">
-            <source media="(max-width: 767px)" srcset="img/eating-mobile.webp 1x, img/eating-mobile-2x.webp 2x" type="image/webp">
-            <img class="adventages__item-img adventages__item-img--eating" src="img/eating-mobile.png" srcset="img/eating-mobile-2x.png 2x" alt="Замена на фунциональное питание">
-          </picture>
-          <svg class="adventages__item-adventage-3">
-            <use xlink:href="img/sprite.svg#adventage-3"></use>
-          </svg>
+        <li class="adventages__item adventages__item--eating">
           <p class="adventages__text">Замените один-два приема обычной еды на наше
             функциональное питание.</p>
         </li>
-        <li class="adventages__item">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/time.webp 1x, img/time-2x.webp 2x" type="image/webp">
-            <source media="(max-width: 767px)" srcset="img/time-mobile.webp 1x, img/time-mobile-2x.webp 2x" type="image/webp">
-            <img class="adventages__item-img adventages__item-img--time" src="img/time-mobile.png" srcset="img/time-mobile-2x.png 2x" alt="Функциональное питание">
-          </picture>
-          <svg class="adventages__item-adventage-4">
-            <use xlink:href="img/sprite.svg#adventage-4"></use>
-          </svg>
+        <li class="adventages__item adventages__item--time">
           <p class="adventages__text">Уже через месяц наслаждайтесь изменениями к лучшему<br
-              class="adventages__text-br"> вашего питомца!</p>
+              class="adventages__text-br"><wbr> вашего питомца!</p>
         </li>
       </ul>
     </section>
@@ -131,7 +95,7 @@
         <div class="live-example__column-container-left">
           <h2 class="live-example__title">Живой пример</h2>
           <p class="live-example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat<br
-              class="live-example__br"> Energy
+              class="live-example__br"><wbr> Energy
             Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
             по 16 часов в день.</p>
           <div class="live-example__price-container">
@@ -159,7 +123,7 @@
               <source media="(min-width: 768px)" srcset="img/before-full.png 1x, img/before-full-2x.png 2x">
               <source media="(max-width: 767px)" srcset="img/before-mobile.webp 1x, img/before-mobile-2x.webp 2x" type="image/webp">
               <img class="live-example__image live-example__image--before live-example__image--show"
-                src="img/before-mobile.png" srcset="img/before-mobile-2x.png 2x" alt="Кот до применения программы питания">
+                src="img/before-mobile.png" srcset="img/before-mobile-2x.png 2x" width="280" height="232" alt="Кот до применения программы питания">
             </picture>
             <picture>
               <source media="(min-width: 1240px)" srcset="img/after-full.webp 1x, img/after-full-2x.webp 2x" type="image/webp">
@@ -167,7 +131,7 @@
               <source media="(min-width: 768px)" srcset="img/after-full.webp 1x, img/after-full-2x.webp 2x" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/after-full.png 1x, img/after-full-2x.png 2x">
               <source media="(max-width: 767px)" srcset="img/after-mobile.webp 1x, img/after-mobile-2x.webp 2x" type="image/webp">
-              <img class="live-example__image live-example__image--after" src="img/after-mobile.png" srcset="img/after-mobile-2x.png 2x" alt="Кот после применения программы питания">
+              <img class="live-example__image live-example__image--after" src="img/after-mobile.png" srcset="img/after-mobile-2x.png 2x" width="280" height="232" alt="Кот после применения программы питания">
             </picture>
           </div>
           <ul class="live-example__buttons buttons-list">
@@ -176,7 +140,7 @@
             </li>
             <li class="buttons-list__item">
               <div class="buttons-list__scale">
-                <span class="buttons-list__bar" aria-label="Ползунок"></span>
+                <span class="buttons-list__bar" aria-label="Переместите ползунок"></span>
               </div>
             </li>
             <li class="buttons-list__item">
@@ -220,7 +184,7 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vk" href="#">
-              <svg class="social__icon" viewbox="0 0 23 16">
+              <svg class="social__icon" width="23" height="16" viewbox="0 0 23 16">
                 <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
               <span class="visually-hidden">Вконтакте</span>
@@ -228,7 +192,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="#">
-              <svg class="social__icon social__icon--instagram" viewbox="0 0 16 16">
+              <svg class="social__icon social__icon--instagram" width="16" height="16" viewbox="0 0 16 16">
                 <use xlink:href="img/sprite.svg#icon-instagram"></use>
               </svg>
               <span class="visually-hidden">Инстаграм</span>
@@ -236,7 +200,7 @@
           </li>
           <li class="social__item">
             <a class="social__link social__link--fb" href="#">
-              <svg class="social__icon" viewbox="0 0 22 22">
+              <svg class="social__icon" width="22" height="22" viewbox="0 0 22 22">
                 <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
               <span class="visually-hidden">Фейсбук</span>
@@ -248,13 +212,13 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="copyright__link-logo" href="https://htmlacademy.ru/intensive/adaptive"
           aria-label="Переход на сайт HTML Academy">
-        <svg class="copyright__link-logo-academy" viewbox="0 0 27 34">
+        <svg class="copyright__link-logo-academy" width="27" height="34" viewbox="0 0 27 34">
           <use xlink:href="img/sprite.svg#academy-logo"></use>
         </svg></a>
       </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

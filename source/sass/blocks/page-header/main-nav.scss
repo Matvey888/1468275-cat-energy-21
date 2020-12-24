@@ -7,6 +7,10 @@
   height: 65px;
   background: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav {
