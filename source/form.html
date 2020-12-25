@@ -13,11 +13,11 @@
 <body class="page__body">
 
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
+    <a class="page-header__link-logo" href="index.html">
       <picture>
         <source media="(min-width: 1240px)" srcset="img/logo/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
-        <img class="logo" src="img/logo/logo-mobile.svg" alt="Логотип магазина Кэт-энерджи">
+        <img class="page-header__logo" src="img/logo/logo-mobile.svg" width="191" height="38" alt="Логотип магазина Кэт-энерджи">
       </picture>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -66,16 +66,16 @@
         <div class="form__list-border-container">
           <ul class="form__list radio-list">
             <li class="form__item radio-list__item radio-item">
-              <input class="form__input-radio radio-item__input visually-hidden" type="radio" name="mass" id="slimming"
+              <input class="form__input-radio radio-item__input visually-hidden" type="radio" name="advice" id="slimming"
                 checked>
               <label class="form__label-radio radio-item__label" for="slimming">Похудение</label>
             </li>
             <li class="form__item radio-list__item radio-item">
-              <input class="form__input-radio radio-item__input visually-hidden" type="radio" name="mass" id="up-mass">
+              <input class="form__input-radio radio-item__input visually-hidden" type="radio" name="advice" id="up-mass">
               <label class="form__label-radio radio-item__label" for="up-mass">Набор массы</label>
             </li>
             <li class="form__item radio-list__item radio-item">
-              <input class="form__input-radio radio-item__input visually-hidden" type="radio" name="mass"
+              <input class="form__input-radio radio-item__input visually-hidden" type="radio" name="advice"
                 id="need-advice">
               <label class="form__label-radio radio-item__label" for="need-advice">Не знаю (нужен ваш совет)</label>
             </li>
@@ -85,7 +85,7 @@
 
       <div class="form__fieldset owner-contacts">
         <h2 class="form__legend owner-contacts__legend"><span class="form__legend-text owner-contacts__text">Контактные данные<br
-              class="owner-contacts__br"><wbr> (владельца кота)</span></h2>
+              class="owner-contacts__br"> (владельца кота)</span></h2>
         <ul class="form__list owner-contacts__list">
           <li class="form__item owner-contacts__item">
             <label class="form__label owner-contacts__label owner-contacts__label--email"

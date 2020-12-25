@@ -19,7 +19,7 @@
   }
 }
 
-.page-header__logo {
+.page-header__link-logo {
   width: 191px;
   height: 38px;
   display: block;
@@ -35,7 +35,24 @@
   }
 
   @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
     padding: 5px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.page-header__logo {
+  width: 191px;
+  height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
   }
 
   @media (min-width: $desktop-width) {

@@ -252,7 +252,7 @@
   line-height: 20px;
   border: none;
   width: 280px;
-  height: 40px;
+  min-height: 40px;
   margin: 0;
   margin-bottom: 21px;
   cursor: pointer;
@@ -269,7 +269,7 @@
     font-size: 20px;
     line-height: 24px;
     width: 282px;
-    height: 52px;
+    min-height: 52px;
     margin-right: 62px;
   }
 
