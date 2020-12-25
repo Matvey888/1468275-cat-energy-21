@@ -57,7 +57,7 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    width: 420px;
+    max-width: 415px;
     padding: 0;
     margin-bottom: 41px;
     color: $basic-black;
@@ -86,6 +86,7 @@
     line-height: 20px;
     text-align: left;
     color: $basic-black;
+    max-width: 285px;
   }
 
   @media (min-width: $desktop-width) {
