@@ -3,11 +3,10 @@
   min-height: 480px;
   background-color: transparent;
   position: relative;
+  z-index: 0;
 
 
   @media (max-width: $mobile-width-only) {
-    z-index: 0;
-
     &::before {
       position: absolute;
       content: "";
@@ -98,9 +97,9 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  left: 20px;
   width: 280px;
   height: 270px;
+  z-index: -1;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
@@ -137,13 +136,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 230px;
-    left: 110px;
+    position: static;
     font-size: 20px;
     line-height: 20px;
     width: 244px;
-    min-height: 54px;
+    height: 54px;
     padding: 0;
     z-index: 1;
   }
