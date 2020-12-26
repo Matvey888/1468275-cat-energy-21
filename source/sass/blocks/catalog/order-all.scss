@@ -38,7 +38,6 @@
   @media (min-width: $tablet-width) {
     max-width: 708px;
     height: 200px;
-    // background-size: 708px auto;
     background-image: url("../../../img/gift-photo-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -74,7 +73,6 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    // display: block;
     top: 72px;
     right: 17.5%;
     text-align: left;

@@ -5,9 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи. Форма</title>
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -15,7 +17,7 @@
   <header class="page-header">
     <a class="page-header__link-logo" href="index.html">
       <picture>
-        <source media="(min-width: 1240px)" srcset="img/logo/logo-desktop.svg">
+        <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
         <img class="page-header__logo" src="img/logo/logo-mobile.svg" width="191" height="38" alt="Логотип магазина Кэт-энерджи">
       </picture>
@@ -85,7 +87,7 @@
 
       <div class="form__fieldset owner-contacts">
         <h2 class="form__legend owner-contacts__legend"><span class="form__legend-text owner-contacts__text">Контактные данные<br
-              class="owner-contacts__br"> (владельца кота)</span></h2>
+              class="owner-contacts__br"><wbr> (владельца кота)</span></h2>
         <ul class="form__list owner-contacts__list">
           <li class="form__item owner-contacts__item">
             <label class="form__label owner-contacts__label owner-contacts__label--email"
@@ -167,7 +169,7 @@
 
   <footer class="page-footer page-footer--special">
     <div class="page-footer__container">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo page-footer__logo--special">
         <picture>
           <source srcset="img/footer-logo.webp 1x, img/footer-logo-2x.webp 2x" type="image/webp">
           <img class="page-footer__logo-image" src="img/footer-logo.png" srcset="img/footer-logo-2x.png 2x" width="130" height="25" alt="Логотип Кэт энерджи">

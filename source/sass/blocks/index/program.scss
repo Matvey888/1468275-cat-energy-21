@@ -30,14 +30,12 @@
   @media (min-width: $tablet-width) {
     padding-left: 117px;
     min-height: 810px;
-    // background: none;
   }
 
   @media (min-width: $desktop-width) {
     width: 1240px;
     min-height: 550px;
     padding: 0;
-    // padding-left: 145px;
   }
 }
 
@@ -86,6 +84,7 @@
     text-align: left;
     color: $basic-black;
     max-width: 285px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: $desktop-width) {
