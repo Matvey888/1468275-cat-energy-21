@@ -22,13 +22,13 @@
       top: 0;
       right: 0;
       background-color: $basic-green;
-      background-image: url("../../img/cat-section-eating-desktop.jpg");
+      background-image: url("../img/cat-section-eating-desktop.jpg");
       background-position: 0 0;
       background-repeat: no-repeat;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../img/cat-section-eating-desktop-2x.jpg");
+        background-image: url("../img/cat-section-eating-desktop-2x.jpg");
       }
     }
   }
