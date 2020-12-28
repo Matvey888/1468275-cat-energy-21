@@ -15,14 +15,14 @@
       width: 100%;
       height: 63%;
       background-color: $basic-green;
-      background-image: url("../../../img/cat_section_eating.jpg");
+      background-image: url("../img/cat_section_eating.jpg");
       background-position: 0 0;
       background-repeat: no-repeat;
       background-size: 100% auto;
       z-index: -1;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../../img/cat_section_eating-2x.jpg");
+        background-image: url("../img/cat_section_eating-2x.jpg");
       }
     }
   }
